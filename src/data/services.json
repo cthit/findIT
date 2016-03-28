@@ -1,36 +1,71 @@
 {
-  "HubbIT" : {
-    "title" : "HubbIT",
+  "findIT": {
+    "title": "findIT",
+    "url": "http://findit.chalmers.it",
+    "description": "Meta. A portal site for discovering services developed by and for the IT section.",
+    "github_url": "https://github.com/cthit/findIT"
+  },
+
+  "mat": {
+    "title": "mat",
+    "url": "http://mat.chalmers.it",
+    "description": "A simple site for quickly accessing menus for different food places around campus Johanneberg.",
+    "github_url": "https://github.com/cthit/mat"
+  },
+
+  "eatIT": {
+    "title": "eatIT",
+    "url": "http://eatit.chalmers.it",
+    "description": "A simple web system for organizing food orders, such as pizza.",
+    "github_url": "https://github.com/cthit/mat"
+  },
+
+  "bookIT": {
+    "title": "bookIT",
+    "url": "http://bookit.chalmers.it",
+    "description": "Booking system for Hubben 2.1, HASen and the Hubben group room.",
+    "github_url": "https://github.com/cthit/bookIT"
+  },
+
+  "hubbIT": {
+    "title": "hubbIT",
     "url": "http://hubbit.chalmers.it",
     "description": "See who is currently in Hubben 2.1 and log your visits for achievements and glory.",
     "github_url": "https://github.com/cthit/hubbit"
   },
 
-  "HubbIT2" : {
-    "title" : "HubbIT",
-    "url": "http://hubbit.chalmers.it",
-    "description": "See who is currently in Hubben 2.1 and log your visits for achievements and glory.",
-    "github_url": "https://github.com/cthit/hubbit"
+  "hueIT": {
+    "title": "hueIT",
+    "url": "http://hue.chalmers.it",
+    "description": "Interface for controlling Philliphs Hue Lights in Hubben 2.1",
+    "github_url": "https://github.com/cthit/HueIT-rails"
   },
 
-  "HubbIT3" : {
-    "title" : "HubbIT",
-    "url": "http://hubbit.chalmers.it",
-    "description": "See who is currently in Hubben 2.1 and log your visits for achievements and glory.",
-    "github_url": "https://github.com/cthit/hubbit"
+  "achieveIT": {
+    "title": "achieveIT",
+    "url": "http://achieveit.chalmers.it",
+    "description": "An achievement system for hubbIT.",
+    "github_url": "https://github.com/cthit/achieveIT"
   },
 
-  "HubbIT4" : {
-    "title" : "HubbIT",
-    "url": "http://hubbit.chalmers.it",
-    "description": "See who is currently in Hubben 2.1 and log your visits for achievements and glory.",
-    "github_url": "https://github.com/cthit/hubbit"
+  "achieveIT": {
+    "title": "nollkIT",
+    "url": "http://nollk.it",
+    "description": "The nollkIT committee website",
+    "github_url": "https://github.com/cthit/nollkIT"
   },
 
-  "HubbIT" : {
-    "title" : "HubbIT",
-    "url": "http://hubbit.chalmers.it",
-    "description": "See who is currently in Hubben 2.1 and log your visits for achievements and glory.",
-    "github_url": "https://github.com/cthit/hubbit"
+  "chalmersIT": {
+    "title": "chalmers.it",
+    "url": "https://chalmers.it",
+    "description": "Current version of chalmers.it, built with WordPress.",
+    "github_url": "https://github.com/cthit/chalmersit-wordpress"
+  },
+
+  "chalmersIT_rails": {
+    "title": "chalmers.it (beta)",
+    "url": "https://beta.chalmers.it",
+    "description": "Upcoming version of chalmers.it, built with Rails.",
+    "github_url": "https://github.com/cthit/chalmersit-rails"
   }
 }
