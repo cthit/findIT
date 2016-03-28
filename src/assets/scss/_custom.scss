@@ -1,0 +1,45 @@
+/* Custom CSS for FindIT */
+
+body {
+	background: #F7F7F7;
+}
+
+h1 small {
+	color: #6D6D6D;
+}
+
+header {
+	margin: 20px 0;
+}
+
+.foodtable .button {
+	margin-bottom: rem-calc(5);
+	margin-top: rem-calc(5);
+}
+
+#it-logo {
+	width: rem-calc(100);
+	float: right;
+}
+
+.min-width-buttons {
+	min-width: 100px;
+}
+
+.service {
+	padding: 20px;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+	border-radius: 3px;
+	background-color: #fff;
+	margin-bottom: 30px;
+
+	h3 {
+		margin-bottom: 0
+	}
+
+	p {
+		margin-bottom: 0;
+		font-size: 14px;
+		color: #666;
+	}
+}
