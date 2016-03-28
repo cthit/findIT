@@ -1,5 +1,5 @@
 ---
-title: 'FindIT: Digital services directory'
+title: 'findIT - Digital services directory'
 ---
 <div class="row">
 
@@ -8,6 +8,11 @@ title: 'FindIT: Digital services directory'
       <div class="service">
         <h3><a href="{{this.url}}">{{this.title}}</a></h3>
         <p>{{this.description}}</p>
+
+        <div class="actions">
+          <a href="{{this.url}}" target="_blank" class="button"><i class="fa fa-external-link"></i> Open service</a>
+          <a href="{{this.github_url}}" target="_blank" class="button secondary"><i class="fa fa-github"></i> GitHub</a>
+        </div>
       </div>
     </div>
   {{/each}}

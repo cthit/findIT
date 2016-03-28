@@ -24,7 +24,6 @@ var PATHS = {
   ],
   sass: [
     'bower_components/foundation-sites/scss',
-    'bower_components/motion-ui/src/'
   ],
   javascript: [
     'bower_components/jquery/dist/jquery.js',

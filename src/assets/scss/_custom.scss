@@ -6,10 +6,7 @@ body {
 
 h1 small {
 	color: #6D6D6D;
-}
-
-header {
-	margin: 20px 0;
+	font-weight: 200;
 }
 
 .foodtable .button {
@@ -41,5 +38,21 @@ header {
 		margin-bottom: 0;
 		font-size: 14px;
 		color: #666;
+	}
+}
+
+.header-background {
+	background: #fff;
+	margin-bottom: 30px;
+	padding: 20px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.actions {
+	margin-top: 10px;
+
+	.button {
+		margin-bottom: 0;
+		border-radius: 2px;
 	}
 }
