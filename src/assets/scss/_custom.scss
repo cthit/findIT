@@ -49,14 +49,19 @@ h1 small {
 
 .header-background {
 	background: #fff;
+	margin-bottom: 30px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	position: relative;
+}
+
+.header-holder {
 	padding: 20px;
 }
 
 .global-message {
-	margin-bottom: 30px;
 	padding: 10px;
-	background-color: $secondary-color;
-	color: #fff;
+	border-top: 1px solid #eee;
+	color: $secondary-color;
 	text-align: center;
 	font-size: 14px;
 	font-weight: bold;
@@ -71,7 +76,7 @@ h1 small {
 	}
 }
 
-@media screen and (max-width: 640px) {
+@media #{$small-only} {
 	.service {
 		margin-bottom: 0;
 		background-color: #fff;
@@ -86,13 +91,8 @@ h1 small {
 		}
 	}
 
-	.global-message {
-		display: none;
-	}
-
 	.header-background {
-		box-shadow: 0 0 15px rgba(0,0,0,0.3);
-		position: relative; /* Needed to make shadow visible, for some reason */
+		margin-bottom: 0;
 	}
 
 	h1 {
