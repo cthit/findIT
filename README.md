@@ -6,10 +6,20 @@ A simple site for browsing the digital services available for Chalmers IT sectio
 ## Dependencies
 To build node, npm, git and bower must be installed.
 
-## Build
+## Install
 ```text
 npm install
 bower install
+```
+
+## Run for development
+Includes auto reload and file watch.
+```
+npm run
+```
+
+## Build for production
+```
 npm run build
 ```
 
