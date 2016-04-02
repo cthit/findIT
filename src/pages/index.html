@@ -3,7 +3,7 @@ title: 'findIT - Digital services directory'
 ---
 <div class="row">
 
-  {{#each services}}
+  {{#sortedEach services}}
     <div class="large-4 medium-6 small-12 columns">
       <div class="service">
         <h3>
@@ -17,10 +17,12 @@ title: 'findIT - Digital services directory'
 
         <div class="actions">
           <a href="{{this.url}}" target="_blank" class="button"><i class="fa fa-external-link"></i> Open service</a>
-          <a href="{{this.github_url}}" target="_blank" class="button secondary"><i class="fa fa-github"></i> GitHub</a>
+          {{#if this.github_url}}
+            <a href="{{this.github_url}}" target="_blank" class="button secondary"><i class="fa fa-github"></i> GitHub</a>
+          {{/if}}
         </div>
       </div>
     </div>
-  {{/each}}
+  {{/sortedEach}}
 
 </div>
