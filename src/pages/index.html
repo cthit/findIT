@@ -6,7 +6,13 @@ title: 'findIT - Digital services directory'
   {{#each services}}
     <div class="large-4 medium-6 small-12 columns">
       <div class="service">
-        <h3><a href="{{this.url}}">{{this.title}}</a></h3>
+        <h3>
+          {{#if this.fontawesome_icon}}
+            <i class="fa {{this.fontawesome_icon}}"></i>
+          {{/if}}
+          
+          <a href="{{this.url}}">{{this.title}}</a>
+        </h3>
         <p>{{this.description}}</p>
 
         <div class="actions">
