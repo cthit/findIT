@@ -61,5 +61,19 @@
     "description": "Upcoming version of chalmers.it, built with Rails.",
     "github_url": "https://github.com/cthit/chalmersit-rails",
     "fontawesome_icon": "fa-diamond"
+  },
+
+  "git_tutorial": {
+    "title": "GIT tutorial",
+    "url": "http://git.chalmers.it",
+    "description": "Mega awesome digIT GIT-tutorial.",
+    "fontawesome_icon": "fa-code-fork"
+  },
+
+  "irc_tutorial": {
+    "title": "IRC tutorial",
+    "url": "https://irc.chalmers.it",
+    "description": "Mega awesome digIT IRC-tutorial.",
+    "fontawesome_icon": "fa-comments-o"
   }
 }
