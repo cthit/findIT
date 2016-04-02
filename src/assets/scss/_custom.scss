@@ -1,4 +1,4 @@
-/* Custom CSS for FindIT */
+/* Custom CSS for findIT */
 
 body {
 	background: #F7F7F7;
@@ -76,7 +76,15 @@ h1 small {
 	}
 }
 
+@media #{$medium-up} {
+	// Vertically align the title
+	header h1 {
+		padding-top: 10px;
+	}
+}
+
 @media #{$small-only} {
+	// On small layouts, make the cards into full width boxes
 	.service {
 		margin-bottom: 0;
 		background-color: #fff;
@@ -91,6 +99,7 @@ h1 small {
 		}
 	}
 
+	// No gap between header and service boxes
 	.header-background {
 		margin-bottom: 0;
 	}
