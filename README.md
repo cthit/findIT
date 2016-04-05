@@ -15,7 +15,7 @@ bower install
 ## Run for development
 Includes auto reload and file watch.
 ```
-npm run
+npm start
 ```
 
 ## Build for production
