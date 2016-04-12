@@ -23,6 +23,14 @@
     "fontawesome_icon": "fa-calendar"
   },
 
+  "findIT": {
+    "title": "findIT",
+    "url": "http://findIT.chalmers.it",
+    "description": "Site for browsing the digital services available for Chalmers IT section students.",
+    "github_url": "https://github.com/cthit/findIT",
+    "fontawesome_icon": "fa-search"
+  },
+
   "hubbIT": {
     "title": "hubbIT",
     "url": "http://hubbit.chalmers.it",
