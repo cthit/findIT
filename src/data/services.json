@@ -83,5 +83,13 @@
     "url": "https://irc.chalmers.it",
     "description": "Mega awesome digIT IRC-tutorial.",
     "fontawesome_icon": "fa-comments-o"
+  },
+
+  "singIT": {
+    "title": "singIT",
+    "url": "https://singit.chalmers.it",
+    "description": "List of all songs available in Hubben's karaoke.",
+    "github_url": "https://github.com/cthit/singit",
+    "fontawesome_icon": "fa-microphone"
   }
 }
