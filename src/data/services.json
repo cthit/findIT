@@ -91,5 +91,11 @@
     "description": "List of all songs available in Hubben's karaoke.",
     "github_url": "https://github.com/cthit/singit",
     "fontawesome_icon": "fa-microphone"
-  }
+    },
+    "wikITpedia": {
+      "title": "wikITpedia",
+      "url": "https://wiki.chalmers.it",
+      "description": "A wiki where IT students can share knowledge with each other.",
+      "fontawesome_icon": "fa-wikipedia-w"
+    }
 }
