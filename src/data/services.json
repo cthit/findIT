@@ -58,15 +58,7 @@
   "chalmersIT": {
     "title": "chalmers.it",
     "url": "https://chalmers.it",
-    "description": "Current version of chalmers.it, built with WordPress.",
-    "github_url": "https://github.com/cthit/chalmersit-wordpress",
-    "fontawesome_icon": "fa-wordpress"
-  },
-
-  "chalmersIT_rails": {
-    "title": "chalmers.it (beta)",
-    "url": "https://beta.chalmers.it",
-    "description": "Upcoming version of chalmers.it, built with Rails.",
+    "description": "Current version of chalmers.it, built with Rails.",
     "github_url": "https://github.com/cthit/chalmersit-rails",
     "fontawesome_icon": "fa-diamond"
   },
