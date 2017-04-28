@@ -90,12 +90,7 @@
       "description": "A wiki where IT students can share knowledge with each other.",
       "fontawesome_icon": "fa-wikipedia-w"
     },
-  "kNASit" {
-    "title": "kNASit",
-    "url": "https://nas.chalmers.it",
-    "description": "Sektionens NAS, här har (alla) föreningar och komittéer enormt mycket plats för sina knasiga filer.",
-    "fontawesome_icon": "fa-hdd-o"
-  },
+
     "gIThub": {
     "title": "gIThub",
     "url": "https://github.com/cthit",
