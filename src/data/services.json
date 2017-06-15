@@ -101,5 +101,11 @@
     "url": "https://github.com/cthit",
     "description": "A github page for open-source projects made by and for IT students. Feel free to contribute!",
     "fontawesome_icon": "fa-github"
-  }
+  },
+    "slack": {
+      "title": "Slack",
+      "url": "https://cthit.slack.com",
+      "description": "The IT student divisions slack team",
+      "fontawesome_icon": "fa-slack"
+    }
 }
