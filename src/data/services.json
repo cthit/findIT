@@ -107,5 +107,11 @@
       "url": "https://cthit.slack.com",
       "description": "The IT student divisions slack team",
       "fontawesome_icon": "fa-slack"
+    },
+    "sannes": {
+      "title": "Sannes",
+      "url": "https://sannes.chalmers.it",
+      "description": "An interactive menu for our most belovied pizzeria, Sannesgården",
+      "fontawesome_icon": "fa-pizza"
     }
 }
