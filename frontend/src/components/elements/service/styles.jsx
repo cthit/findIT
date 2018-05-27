@@ -4,7 +4,7 @@ export const Container = styled.div`
   margin: 16px;
   position: relative;
   padding: 16px 0px 16px 16px;
-  font-family: roboto;
+  font-family: Roboto;
   max-width: 300px;
   max-height: 160px;
   min-width: 300px;
@@ -17,7 +17,7 @@ export const ServiceHeader = styled.h3`
   margin-bottom: 0;
   margin-top: 0;
   font-weight: 700;
-  font-family: roboto-slab;
+  font-family: Roboto Slab;
 `;
 
 export const ServiceIcon = styled.i`
@@ -50,7 +50,7 @@ export const ButtonGroup = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  font-family: roboto;
+  font-family: Roboto;
   font-weight: 400;
 `;
 
