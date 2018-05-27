@@ -16,7 +16,6 @@ export const Container = styled.div`
 export const ServiceHeader = styled.h3`
   margin-bottom: 0;
   margin-top: 0;
-  font-weight: 700;
   font-family: Roboto Slab;
 `;
 
@@ -37,7 +36,9 @@ export const ServiceTitle = styled.a`
 
 export const Description = styled.p`
   margin-bottom: 0;
+  margin-top: 8px;
   font-size: 14px;
+  padding: 0px 8px 4px 8px;
   color: #666;
   min-height: 3em;
 `;
