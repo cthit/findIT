@@ -11,7 +11,7 @@
     "title": "eatIT",
     "url": "http://eatit.chalmers.it",
     "description": "A simple web system for organizing food orders, such as pizza.",
-    "github_url": "https://github.com/cthit/mat",
+    "github_url": "https://github.com/cthit/eatit",
     "fontawesome_icon": "fa-cutlery"
   },
 
@@ -67,6 +67,7 @@
     "title": "GIT tutorial",
     "url": "http://git.chalmers.it",
     "description": "Mega awesome digIT GIT-tutorial.",
+    "github_url": "",
     "fontawesome_icon": "fa-code-fork"
   },
 
@@ -74,6 +75,7 @@
     "title": "IRC tutorial",
     "url": "https://irc.chalmers.it",
     "description": "Mega awesome digIT IRC-tutorial.",
+    "github_url": "",    
     "fontawesome_icon": "fa-comments-o"
   },
 
@@ -89,34 +91,31 @@
     "title": "wikITpedia",
     "url": "https://wiki.chalmers.it",
     "description": "A wiki where IT students can share knowledge with each other.",
+    "github_url": "",    
     "fontawesome_icon": "fa-wikipedia-w"
-  },
-  
-  "kNASit": {
-    "title": "kNASit",
-    "url": "https://nas.chalmers.it",
-    "description": "Sektionens NAS, här har (alla) föreningar och komittéer enormt mycket plats för sina knasiga filer.",
-    "fontawesome_icon": "fa-hdd-o"
   },
   
   "gIThub": {
     "title": "gIThub",
     "url": "https://github.com/cthit",
     "description": "A github page for open-source projects made by and for IT students. Feel free to contribute!",
+    "github_url": "",
     "fontawesome_icon": "fa-github"
   },
   
-  "slack": {
-    "title": "Slack",
-    "url": "https://cthit.slack.com",
-    "description": "The IT student divisions slack team",
-   "fontawesome_icon": "fa-slack"
-  },
   "sannes": {
     "title": "Sannes",
     "url": "https://sannes.chalmers.it",
     "description": "An interactive menu for our most belovied pizzeria, Sannesgården",
     "github_url": "https://github.com/cthit/sannes",
-    "fontawesome_icon": "fa-pizza"
+    "fontawesome_icon": "fa-cutlery"
+  },
+
+  "slack": {
+    "title": "Slack",
+    "url": "https://cthit.slack.com",
+    "description": "The IT student divisions slack team",
+    "github_url": "",
+    "fontawesome_icon": "fa-slack"
   }
 }
