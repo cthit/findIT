@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import { HeaderContainer, HeaderText } from './styles';
+import { HeaderContainer, HeaderText } from "./styles";
 
-
-export const Header = () =>
-    <HeaderContainer>
-        <HeaderText>findIT</HeaderText>
-    </HeaderContainer>
+export const Header = () => (
+  <HeaderContainer>
+    <HeaderText>findIT</HeaderText>
+  </HeaderContainer>
+);
