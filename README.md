@@ -1,28 +1,29 @@
-FindIT: Portal site for *.chalmers.it digital services
-============================
+# FindIT: Portal site for \*.chalmers.it digital services
 
-A simple site for browsing the digital services available for Chalmers IT section students.
+## To run docker for dev
 
-## Dependencies
-To build node, npm, git and bower must be installed.
-
-## Install
-```text
-npm install
-bower install
+```
+$ docker-compose -f docker-compose.yaml up --build
 ```
 
-## Run for development
-Includes auto reload and file watch.
-```
-npm start
-```
+## To run docker for prod
 
-## Build for production
 ```
-npm run build
+$ docker-compose -f prod.docker-compose.yaml up --build
 ```
 
 ## Modifying data
-To modify any data about the services, edit the `.json` files in `src/data/`
-and rebuild the project.
+
+To modify any data about the services, edit `services.json` files in `src/`
+
+Service have the following structure
+
+```
+  "service": {
+    "title": "service",
+    "url": "link to service",
+    "description": "A short description explaining why this service is neat.",
+    "github_url": "link to github repository but if it doesn't have a github repo leave this field empty. I.E *""* ",
+    "fontawesome_icon": ""
+  },
+```
