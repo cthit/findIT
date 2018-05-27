@@ -1,11 +1,23 @@
-FindIT: Portal site for *.chalmers.it digital services
-============================
+# FindIT: Portal site for \*.chalmers.it digital services
 
+## To run docker for dev
+
+```
+$ docker-compose -f docker-compose.yaml up --build
+```
+
+## To run docker for prod
+
+```
+$ docker-compose -f prod.docker-compose.yaml up --build
+```
 
 ## Modifying data
+
 To modify any data about the services, edit `services.json` files in `src/`
 
-Service have the following structure 
+Service have the following structure
+
 ```
   "service": {
     "title": "service",
@@ -15,4 +27,3 @@ Service have the following structure
     "fontawesome_icon": ""
   },
 ```
-
