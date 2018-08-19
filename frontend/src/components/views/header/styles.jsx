@@ -11,6 +11,6 @@ export const HeaderContainer = styled.div`
 export const HeaderText = styled.h1`
   margin: 0;
   color: white;
-  font-family: Roboto Slab;
+  font-family: "Roboto Slab";
   font-weight: 300;
 `;
