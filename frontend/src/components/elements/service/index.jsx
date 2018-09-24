@@ -22,7 +22,7 @@ export const Service = ({
   <Container>
     <ServiceHeader>
       <ServiceIcon className={"fa " + fontawesome_icon} />
-      <ServiceTitle target="blank" href={url}>
+      <ServiceTitle target="_blank" href={url}>
         {title}
       </ServiceTitle>
     </ServiceHeader>
@@ -33,11 +33,11 @@ export const Service = ({
       {github_url === "" ? (
         ""
       ) : (
-        <GithubButton appearence="primary" target="blank" href={github_url}>
+        <GithubButton appearence="primary" target="_blank" href={github_url}>
           <ButtonIcon className="fa fa-github" /> Github
         </GithubButton>
       )}
-      <ServiceButton appearence="primary" target="blank" href={url}>
+      <ServiceButton appearence="primary" target="_blank" href={url}>
         <ButtonIcon className="fa fa-external-link" /> Open Service
       </ServiceButton>
     </ButtonGroup>
