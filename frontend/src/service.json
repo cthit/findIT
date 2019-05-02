@@ -53,12 +53,12 @@
     "fontawesome_icon": "fa-lightbulb-o"
   },
 
-  "achieveIT": {
-    "title": "achieveIT",
-    "url": "http://achieveit.chalmers.it",
-    "description": "An achievement system for hubbIT.",
-    "github_url": "https://github.com/cthit/achieveIT",
-    "fontawesome_icon": "fa-trophy"
+  "GDPR": {
+    "title": "GDPR",
+    "url": "http://gdpr.chalmers.it",
+    "description": "Resources for commitiees and societies to better work with gdpr",
+    "github_url": "",
+    "fontawesome_icon": "fa-eye"
   },
 
   "chalmersIT": {
@@ -126,5 +126,13 @@
     "description": "The IT student divisions slack team.",
     "github_url": "",
     "fontawesome_icon": "fa-slack"
+  },
+
+  "IT-Event Calendar": {
+    "title": "IT-Event Calendar",
+    "url": "https://calendar.google.com/calendar?cid=YTU1aXBkM280OW4wNWNkMmVlYnFvODU0cXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ",
+    "description": "The IT event calendar",
+    "github_url": "",
+    "fontawesome_icon": "fa-calendar"
   }
 }
