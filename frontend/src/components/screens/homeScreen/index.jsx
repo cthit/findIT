@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Service } from "../../elements/service/index";
 import { Container, ServiceContainer, Content } from "./styles";
 import { Header } from "../../views/header/index";
-import { Footer } from "../../views/footer/index";
 import data from "../../../service.json";
 
 class HomeScreen extends Component {
@@ -22,8 +21,6 @@ class HomeScreen extends Component {
           <Header />
           <ServiceContainer>{services}</ServiceContainer>
         </Content>
-
-        {/* <Footer></Footer> */}
       </Container>
     );
   }
