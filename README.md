@@ -3,27 +3,27 @@
 ## To run docker for dev
 
 ```
-$ docker-compose -f docker-compose.yaml up --build
+$ docker-compose up --build
 ```
 
 ## To run docker for prod
 
 ```
-$ docker-compose -f prod.docker-compose.yaml up --build
+$ docker-compose -f prod.docker-compose.yml up --build
 ```
 
 ## Modifying data
 
-To modify any data about the services, edit `services.json` files in `src/`
+To modify any data about the services, edit `service.json` files in `src/`
 
 Service have the following structure
 
 ```
-  "service": {
-    "title": "service",
+  {
+    "title": "service-name",
     "url": "link to service",
     "description": "A short description explaining why this service is neat.",
-    "github_url": "link to github repository but if it doesn't have a github repo leave this field empty. I.E *""* ",
+    "github_url": "Link to github repository. But if it doesn't have a github repo, leave this field empty. I.E *""* ",
     "fontawesome_icon": ""
   },
 ```
