@@ -1,0 +1,5 @@
+frontend/node_modules
+frontend/Dockerfile
+frontend/dev.Dockerfile
+docker-compose.yml
+prod.docker-compose.yml
