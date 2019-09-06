@@ -4,6 +4,5 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    image: findit
     ports:
       - "3000:80"

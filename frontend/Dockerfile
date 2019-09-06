@@ -1,12 +1,15 @@
-from node:9.11.1 as build
+from node:latest as build
 
-COPY /package.json /
-RUN yarn install --production
-RUN yarn global add react-scripts 
+RUN mkdir /usr/src/app
+WORKDIR /usr/src/app
 
 COPY . .
+
+RUN yarn install 
+RUN yarn global add react-scripts
+
 RUN yarn build
 
 from nginx:alpine
 COPY nginx.conf /etc/nginx/nginx.conf
-COPY --from=build /build /usr/share/nginx/html
+COPY --from=build /usr/src/app/build /usr/share/nginx/html
