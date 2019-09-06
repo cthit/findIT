@@ -5,20 +5,20 @@ import { Header } from "../../views/header/index";
 import data from "../../../service.json";
 
 class HomeScreen extends Component {
-  render() {
-    const services = data
-      .sort((a, b) => a.title.localeCompare(b.title))
-      .map(s => <Service {...s} key={s.title} />);
+    render() {
+        const services = data
+            .sort((a, b) => a.title.localeCompare(b.title))
+            .map(s => <Service {...s} key={s.title} />);
 
-    return (
-      <Container>
-        <Content>
-          <Header />
-          <ServiceContainer>{services}</ServiceContainer>
-        </Content>
-      </Container>
-    );
-  }
+        return (
+            <Container>
+                <Content>
+                    <Header />
+                    <ServiceContainer>{services}</ServiceContainer>
+                </Content>
+            </Container>
+        );
+    }
 }
 
 export default HomeScreen;
