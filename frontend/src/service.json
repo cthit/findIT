@@ -133,5 +133,14 @@
         "description": "If there's anything you don't know how to do, you might find it here.",
         "github_url": "https://github.com/cthit/HowTo",
         "fontawesome_icon": "fa-question-circle"
+    },
+
+
+    {
+        "title": "SuggestIT",
+        "url": "https://suggestit.chalmers.it",
+        "description": "Submit suggestions for Hubben 2.1 or the IT student division.",
+        "github_url": "https://github.com/cthit/SuggestIT",
+        "fontawesome_icon": "fa-lightbulb-o"
     }
 ]
