@@ -1,16 +1,14 @@
 import React from "react";
 import "font-awesome/css/font-awesome.min.css";
+import { ServiceIcon } from "./styles";
 import {
-    Container,
-    ServiceHeader,
-    ServiceTitle,
-    ServiceIcon,
-    Description,
-    ButtonGroup,
-    ServiceButton,
-    GithubButton,
-    ButtonIcon,
-} from "./styles";
+    DigitDesign,
+    DigitButton,
+    DigitText,
+    DigitLayout,
+    DigitMarkdown,
+    DigitIfElseRendering,
+} from "@cthit/react-digit-components";
 
 export const Service = ({
     title,
@@ -19,31 +17,33 @@ export const Service = ({
     github_url,
     fontawesome_icon,
 }) => (
-    <Container>
-        <ServiceHeader>
-            <ServiceIcon className={"fa " + fontawesome_icon} />
-            <ServiceTitle target="_blank" href={url}>
-                {title}
-            </ServiceTitle>
-        </ServiceHeader>
-
-        <Description>{description}</Description>
-
-        <ButtonGroup>
-            {github_url === "" ? (
-                ""
-            ) : (
-                <GithubButton
-                    appearence="primary"
-                    target="_blank"
-                    href={github_url}
+    <DigitDesign.Card width="320px" height="190px">
+        <DigitDesign.CardBody>
+            <DigitLayout.Row>
+                <ServiceIcon className={"fa " + fontawesome_icon} />
+                <a
+                    style={{ color: "black", textDecoration: "none" }}
+                    href={url}
+                    target={"_blank"}
                 >
-                    <ButtonIcon className="fa fa-github" /> Github
-                </GithubButton>
-            )}
-            <ServiceButton appearence="primary" target="_blank" href={url}>
-                <ButtonIcon className="fa fa-external-link" /> Open Service
-            </ServiceButton>
-        </ButtonGroup>
-    </Container>
+                    <DigitText.Heading5 text={title} bold />
+                </a>
+            </DigitLayout.Row>
+            <DigitMarkdown markdownSource={description} />
+        </DigitDesign.CardBody>
+        <DigitDesign.CardButtons reverseDirection>
+            <a style={{ marginLeft: "10px" }} href={url} target={"_blank"}>
+                <DigitButton primary outlined raised text={"URL"} />
+            </a>
+            <DigitIfElseRendering
+                test={github_url !== ""}
+                ifRender={() => (
+                    <a style={{}} href={github_url} target={"_blank"}>
+                        <DigitButton primary raised text={"SHITHUB"} />
+                    </a>
+                )}
+                elseRender={() => <div></div>}
+            />
+        </DigitDesign.CardButtons>
+    </DigitDesign.Card>
 );
