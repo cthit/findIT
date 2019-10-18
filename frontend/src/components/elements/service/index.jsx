@@ -33,13 +33,13 @@ export const Service = ({
         </DigitDesign.CardBody>
         <DigitDesign.CardButtons reverseDirection>
             <a style={{ marginLeft: "10px" }} href={url} target={"_blank"}>
-                <DigitButton primary outlined raised text={"URL"} />
+                <DigitButton primary outlined raised text={"Open service"} />
             </a>
             <DigitIfElseRendering
                 test={github_url !== ""}
                 ifRender={() => (
                     <a style={{}} href={github_url} target={"_blank"}>
-                        <DigitButton primary raised text={"SHITHUB"} />
+                        <DigitButton primary text={"GitHub"} />
                     </a>
                 )}
                 elseRender={() => <div></div>}
