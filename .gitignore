@@ -4,3 +4,5 @@ npm-debug.log
 bower_components
 dist
 .idea/*
+
+frontend/package-lock.json
