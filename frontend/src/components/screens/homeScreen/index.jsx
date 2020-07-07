@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import { Service } from "../../elements/service/index";
+import React, {Component} from "react";
+import {Service} from "../../elements/service/index";
 import data from "../../../service.json";
-import { DigitLayout, DigitHeader } from "@cthit/react-digit-components";
+import {DigitLayout, DigitHeader} from "@cthit/react-digit-components";
 
 const gridStyle = {
     marginLeft: "2vw",
@@ -14,7 +14,7 @@ class HomeScreen extends Component {
     render() {
         const services = data
             .sort((a, b) => a.title.localeCompare(b.title))
-            .map(s => <Service {...s} key={s.title} />);
+            .map(s => <Service {...s} key={s.title}/>);
 
         return (
             <DigitHeader
