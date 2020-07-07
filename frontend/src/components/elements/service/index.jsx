@@ -15,11 +15,12 @@ function githubButton(github_url) {
             style={{textDecoration: "none"}}
             href={github_url}
             target={"_blank"}
+            rel="noopener noreferrer"
         >
             <DigitButton primary text={"GitHub"}/>
         </a>
     } else {
-        return <></>
+        return null;
     }
 }
 
@@ -38,6 +39,7 @@ export const Service = ({
                     style={{color: "black", textDecoration: "none"}}
                     href={url}
                     target={"_blank"}
+                    rel="noopener noreferrer"
                 >
                     <DigitText.Heading5 text={title} bold/>
                 </a>
@@ -49,6 +51,7 @@ export const Service = ({
                 style={{marginLeft: "10px", textDecoration: "none"}}
                 href={url}
                 target={"_blank"}
+                rel="noopener noreferrer"
             >
                 <DigitButton primary outlined raised text={"Open service"}/>
             </a>
