@@ -7,8 +7,24 @@ import {
     DigitText,
     DigitLayout,
     DigitMarkdown,
-    DigitIfElseRendering,
 } from "@cthit/react-digit-components";
+
+function githubButton(github_url) {
+    if (github_url !== "") {
+        return (
+            <a
+                style={{ textDecoration: "none" }}
+                href={github_url}
+                target={"_blank"}
+                rel="noopener noreferrer"
+            >
+                <DigitButton primary text={"GitHub"} />
+            </a>
+        );
+    } else {
+        return null;
+    }
+}
 
 export const Service = ({
     title,
@@ -17,7 +33,7 @@ export const Service = ({
     github_url,
     fontawesome_icon,
 }) => (
-    <DigitDesign.Card width="320px" height="190px">
+    <DigitDesign.Card size={{ width: "300px", height: "250px" }}>
         <DigitDesign.CardBody>
             <DigitLayout.Row>
                 <ServiceIcon className={"fa " + fontawesome_icon} />
@@ -25,6 +41,7 @@ export const Service = ({
                     style={{ color: "black", textDecoration: "none" }}
                     href={url}
                     target={"_blank"}
+                    rel="noopener noreferrer"
                 >
                     <DigitText.Heading5 text={title} bold />
                 </a>
@@ -36,22 +53,11 @@ export const Service = ({
                 style={{ marginLeft: "10px", textDecoration: "none" }}
                 href={url}
                 target={"_blank"}
+                rel="noopener noreferrer"
             >
                 <DigitButton primary outlined raised text={"Open service"} />
             </a>
-            <DigitIfElseRendering
-                test={github_url !== ""}
-                ifRender={() => (
-                    <a
-                        style={{ textDecoration: "none" }}
-                        href={github_url}
-                        target={"_blank"}
-                    >
-                        <DigitButton primary text={"GitHub"} />
-                    </a>
-                )}
-                elseRender={() => <div></div>}
-            />
+            {githubButton(github_url)}
         </DigitDesign.CardButtons>
     </DigitDesign.Card>
 );

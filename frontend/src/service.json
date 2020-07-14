@@ -134,5 +134,13 @@
         "description": "Submit suggestions for Hubben 2.1 or the IT student division.",
         "github_url": "https://github.com/cthit/SuggestIT",
         "fontawesome_icon": "fa-lightbulb-o"
+    },
+    
+    {
+        "title": "BussIT",
+        "url": "https://bussit.chalmers.it",
+        "description": "A quick way to know when the buses and trams leave Chalmers.",
+        "github_url": "https://github.com/cthit/BussIT",
+        "fontawesome_icon": "fa-bus"
     }
 ]
