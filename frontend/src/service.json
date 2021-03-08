@@ -142,5 +142,21 @@
         "description": "A quick way to know when the buses and trams leave Chalmers.",
         "github_url": "https://github.com/cthit/BussIT",
         "fontawesome_icon": "fa-bus"
+    },
+    
+    {
+        "title": "VulcanTV",
+        "url": "https://vulcantv.chalmers.it",
+        "description": "Remotely control the TV in Hubben 2.1.",
+        "github_url": "https://github.com/cthit/VulcanTV",
+        "fontawesome_icon": "fa-tv"
+    },
+    
+    {
+        "title": "LinkIT",
+        "url": "https://linkit.chalmers.it",
+        "description": "Link shortener for the Software Engineering Student Division (IT).",
+        "github_url": "https://github.com/cthit/LinkIT",
+        "fontawesome_icon": "fa-link"
     }
 ]
