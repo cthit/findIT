@@ -165,5 +165,12 @@
         "description": "The official digital songbook of the Software Engineering Student Division (IT).",
         "github_url": "https://github.com/cthit/songbook",
         "fontawesome_icon": "fa-music"
+    },
+    {
+        "title": "hexIT",
+        "url": "https://hex.chalmers.it/",
+        "description": "The official color palette for IT",
+        "github_url": "https://github.com/cthit/hexit",
+        "fontawesome_icon": "fa-tint"
     }
 ]
