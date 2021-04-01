@@ -190,7 +190,7 @@
     {
         "title": "hexIT",
         "url": "https://hex.chalmers.it/",
-        "description": "The official color palette for IT",
+        "description": "The (un)official color palette for IT",
         "github_url": "https://github.com/cthit/hexit",
         "fontawesome_icon": "fa-tint",
         "category": "Tools"
