@@ -32,7 +32,7 @@
         "description": "A simple site for browsing the digital services available for Chalmers IT sections students.",
         "github_url": "https://github.com/cthit/findIT",
         "fontawesome_icon": "fa-search",
-        "category": "Tools"
+        "category": "Other Services"
     },
 
     {
@@ -59,7 +59,7 @@
         "description": "Resources for commitiees and societies to better work with gdpr",
         "github_url": "",
         "fontawesome_icon": "fa-eye",
-        "category": "Information"
+        "category": "Learn"
     },
 
     {
@@ -68,7 +68,7 @@
         "description": "Current version of chalmers.it, built with Rails.",
         "github_url": "https://github.com/cthit/chalmersit-rails",
         "fontawesome_icon": "fa-diamond",
-        "category": "Information"
+        "category": "Other Services"
     },
     
     {
@@ -77,7 +77,7 @@
         "description": "Mega awesome digIT IRC-tutorial.",
         "github_url": "",
         "fontawesome_icon": "fa-comments-o",
-        "category": "Information"
+        "category": "Learn"
     },
 
     {
@@ -95,7 +95,7 @@
         "description": "A wiki where IT students can share knowledge with each other.",
         "github_url": "",
         "fontawesome_icon": "fa-wikipedia-w",
-        "category": "Information"
+        "category": "Learn"
     },
 
     {
@@ -104,7 +104,7 @@
         "description": "A github page for open-source projects made by and for IT students. Feel free to contribute!",
         "github_url": "",
         "fontawesome_icon": "fa-github",
-        "category": "Tools"
+        "category": "Links"
     },
 
     {
@@ -122,7 +122,7 @@
         "description": "The IT student divisions slack team.",
         "github_url": "",
         "fontawesome_icon": "fa-slack",
-        "category": "Information"
+        "category": "Links"
     },
 
     {
@@ -131,7 +131,7 @@
         "description": "The IT event calendar",
         "github_url": "",
         "fontawesome_icon": "fa-calendar",
-        "category": "Information"
+        "category": "Links"
     },
 
     {
@@ -140,7 +140,7 @@
         "description": "If there's anything you don't know how to do, you might find it here.",
         "github_url": "https://github.com/cthit/HowTo",
         "fontawesome_icon": "fa-question-circle",
-        "category": "Information"
+        "category": "Learn"
     },
 
 
@@ -159,7 +159,7 @@
         "description": "A quick way to know when the buses and trams leave Chalmers.",
         "github_url": "https://github.com/cthit/BussIT",
         "fontawesome_icon": "fa-bus",
-        "category": "Information"
+        "category": "Other Services"
     },
     
     {
@@ -177,7 +177,7 @@
         "description": "Link shortener for the Software Engineering Student Division (IT).",
         "github_url": "https://github.com/cthit/LinkIT",
         "fontawesome_icon": "fa-link",
-        "category": "Tools"
+        "category": "Other Services"
     },
     {
         "title": "SongBook",
@@ -193,6 +193,6 @@
         "description": "The (un)official color palette for IT",
         "github_url": "https://github.com/cthit/hexit",
         "fontawesome_icon": "fa-tint",
-        "category": "Tools"
+        "category": "Other Services"
     }
 ]
