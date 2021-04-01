@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Service } from "../../elements/service/index";
 import data from "../../../service.json";
-import { SidebarContainer, GridStyle } from "./styles";
-import { DigitLayout, DigitHeader } from "@cthit/react-digit-components";
+import { GridStyle } from "./styles";
+import { DigitHeaderDrawer } from "@cthit/react-digit-components";
 import CategoryList from "../../elements/categorylist";
 import ServiceView from "../../elements/serviceview";
 
@@ -33,25 +33,17 @@ class HomeScreen extends Component {
                 .map(s => <Service {...s} key={s.title} />);
         }
 
-        function Sidebar(props) {
-            return (
-                <SidebarContainer>
-                    <CategoryList {...props} />
-                </SidebarContainer>
-            );
-        }
-
         return (
-            <DigitHeader
+            <DigitHeaderDrawer
                 title="findIT"
+                renderDrawer={() => (
+                    <CategoryList
+                        categoryNames={categories.map(([name]) => name)}
+                    />
+                )}
                 renderMain={() => (
                     <GridStyle>
-                        <DigitLayout.Grid columns={"min-content 1fr"}>
-                            <Sidebar
-                                categoryNames={categories.map(([name]) => name)}
-                            />
-                            <ServiceView services={services} />
-                        </DigitLayout.Grid>
+                        <ServiceView services={services} />
                     </GridStyle>
                 )}
             />

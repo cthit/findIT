@@ -18,14 +18,14 @@ export default function ServiceView({ services }) {
     return (
         <DigitLayout.Column>
             {services.map(({ category, services }) => (
-                <div key={category}>
+                <section key={category}>
                     <DigitText.Heading5
                         text={category}
                         id={category}
                         style={{ marginLeft: "15px" }}
                     />
                     <ServicesList services={services} />
-                </div>
+                </section>
             ))}
         </DigitLayout.Column>
     );
