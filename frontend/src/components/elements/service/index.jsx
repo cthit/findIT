@@ -43,7 +43,7 @@ export const Service = ({
                     target={"_blank"}
                     rel="noopener noreferrer"
                 >
-                    <DigitText.Heading5 text={title} bold />
+                    <DigitText.Heading5 text={title} bold="true" />
                 </a>
             </DigitLayout.Row>
             <DigitMarkdown markdownSource={description} />
