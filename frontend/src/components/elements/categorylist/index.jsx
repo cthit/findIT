@@ -3,16 +3,22 @@ import {
     DigitLayout,
     DigitList,
 } from "@cthit/react-digit-components";
+import digITService from "../../../digITService.json";
 import React from "react";
 
-export default function CategoryList({ categoryNames }) {
+export default function CategoryList({ categoryNames, onDigITActivate }) {
     function onClick(item) {
-        document
-            .getElementById(item.text)
-            .scrollIntoView({ behavior: "smooth" });
+        onDigITActivate(item.text === digITService.title);
+        window.setTimeout(
+            () => document
+                .getElementById(item.text)
+                .scrollIntoView({ behavior: "smooth" }),
+            0
+        );
     }
 
     const items = categoryNames.map(text => ({ text }));
+    items.push({ text: digITService.title });
 
     return (
         <DigitList

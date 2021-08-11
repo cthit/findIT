@@ -7,6 +7,13 @@ import CategoryList from "../../elements/categorylist";
 import ServiceView from "../../elements/serviceview";
 
 class HomeScreen extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isDigIT: false,
+        };
+    }
+
     render() {
         const categories = Object.entries(mapCategories(data)).sort((a, b) =>
             a[0].localeCompare(b[0])
@@ -39,11 +46,15 @@ class HomeScreen extends Component {
                 renderDrawer={() => (
                     <CategoryList
                         categoryNames={categories.map(([name]) => name)}
+                        onDigITActivate={d => this.setState({ isDigIT: d })}
                     />
                 )}
                 renderMain={() => (
                     <GridStyle>
-                        <ServiceView services={services} />
+                        <ServiceView
+                            services={services}
+                            isDigIT={this.state.isDigIT}
+                        />
                     </GridStyle>
                 )}
             />

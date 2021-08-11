@@ -1,7 +1,9 @@
 import { DigitLayout, DigitText } from "@cthit/react-digit-components";
+import { Service } from "../service/index";
+import digITService from "../../../digITService.json"
 import React from "react";
 
-export default function ServiceView({ services }) {
+export default function ServiceView({ services, isDigIT }) {
     function ServicesList({ services }) {
         return (
             <DigitLayout.Grid
@@ -18,7 +20,10 @@ export default function ServiceView({ services }) {
     return (
         <DigitLayout.Column>
             {services.map(({ category, services }) => (
-                <section key={category}>
+                <section
+                    key={category}
+                    style={{ display: isDigIT ? "none" : "unset" }}
+                >
                     <DigitText.Heading5
                         text={category}
                         id={category}
@@ -27,6 +32,23 @@ export default function ServiceView({ services }) {
                     <ServicesList services={services} />
                 </section>
             ))}
+            <section
+                style={{ display: isDigIT ? "unset" : "none" }}
+            >
+                <DigitText.Heading5
+                    text="digIT"
+                    id="digIT"
+                    style={{ marginLeft: "15px" }}
+                />
+                <ServicesList
+                    services={[
+                        <Service
+                            key={digITService.key}
+                            {...digITService}
+                        />
+                    ]}
+                />
+            </section>
         </DigitLayout.Column>
     );
 }
