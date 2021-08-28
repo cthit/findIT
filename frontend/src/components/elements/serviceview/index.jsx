@@ -36,8 +36,8 @@ export default function ServiceView({ services, isDigIT }) {
                 style={{ display: isDigIT ? "unset" : "none" }}
             >
                 <DigitText.Heading5
-                    text="digIT"
-                    id="digIT"
+                    text={digITService.title}
+                    id={digITService.title}
                     style={{ marginLeft: "15px" }}
                 />
                 <ServicesList
