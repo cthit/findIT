@@ -189,7 +189,7 @@
     },
     {
         "title": "hexIT",
-        "url": "https://hex.chalmers.it/",
+        "url": "https://hex.chalmers.it",
         "description": "The (un)official color palette for IT",
         "github_url": "https://github.com/cthit/hexit",
         "fontawesome_icon": "fa-tint",
@@ -197,7 +197,7 @@
     },
     {
         "title": "IT merch shop",
-        "url": "https://shop.chalmers.it/",
+        "url": "https://shop.chalmers.it",
         "description": "The official place to get IT merch. The shop is managed by styrIT and all questions and motif suggestions can be sent their way.",
         "github_url": "",
         "fontawesome_icon": "fa-tshirt",
