@@ -27,3 +27,5 @@ Service have the following structure
     "fontawesome_icon": ""
   },
 ```
+
+The Font Awesome icon has to be from FA 4.7 which can be found [here](https://fontawesome.com/v4.7/icons/).
