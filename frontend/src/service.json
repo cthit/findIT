@@ -108,6 +108,15 @@
     },
 
     {
+        "title": "dockerBoi",
+        "url": "https://docker.chalmers.it",
+        "description": "digIT's very own docker registry!",
+        "github_url": "https://github.com/cthit/dockerBoi",
+        "fontawesome_icon": "fa-ship",
+        "category": "Other Services"
+    },
+
+    {
         "title": "Sannes",
         "url": "https://sannes.chalmers.it",
         "description": "An interactive menu for our most beloved pizzeria, Sannegårdens!",
