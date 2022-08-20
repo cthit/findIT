@@ -16,6 +16,14 @@
         "fontawesome_icon": "fa-cutlery",
         "category": "Food"
     },
+    {
+        "title": "Gibbes",
+        "url": "https://gibbes.chalmers.it",
+        "description": "An interactive menu for our most beloved pizzeria, Gibraltar pizzeria!",
+        "github_url": "https://github.com/cthit/gibbes",
+        "fontawesome_icon": "fa-cutlery",
+        "category": "Food"
+    },
 
     {
         "title": "bookIT",
