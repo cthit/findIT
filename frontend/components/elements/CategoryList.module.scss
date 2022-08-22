@@ -13,7 +13,7 @@
 		flex-wrap:wrap;
 		flex-direction: row;
 		align-items: center;
-		justify-content: center;
+		margin-left:$space-big;
 		gap: $space-small;
 	}
 }
