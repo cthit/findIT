@@ -1,11 +1,7 @@
-from node:latest
+FROM node:lts
 
-RUN mkdir /usr/src/app
-WORKDIR /usr/src/app
+WORKDIR /app
 
-COPY package.json /package.json
+ENV NODE_ENV=development
 
-RUN yarn install 
-RUN yarn global add react-scripts 
-
-CMD yarn start
+CMD yarn && yarn dev
