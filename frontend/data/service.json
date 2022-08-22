@@ -199,7 +199,7 @@
                 "fontawesome_icon": "fa-shopping-cart"
             },
             {
-                "title": "FlashIT image gallery",
+                "title": "FlashIT gallery",
                 "url": "https://flashit.chalmers.it",
                 "description": "A gallery of images from the Software Engineering Student Division (IT).",
                 "github_url": "https://github.com/cthit/flashit-lychee",
