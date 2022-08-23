@@ -3,5 +3,5 @@ export interface Service {
   url: string;
   description: string;
   github_url: string | undefined;
-  fontawesome_icon: string;
+  fontawesome_icon: string | undefined;
 }
