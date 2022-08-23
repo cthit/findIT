@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 
 import CategoryList from "../components/elements/Categorylist";
+import Header from "../components/elements/Header";
 import ServiceCard from "../components/views/ServiceCard";
 import { Category } from "../data/category";
 import { Service } from "../data/service";
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
+        <Header />
         {services.map((service: Category) => (
           <CategoryList services={service} key={service.category} />
         ))}

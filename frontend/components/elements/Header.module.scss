@@ -1,0 +1,12 @@
+@import "../../resources/styles/vars.scss";
+
+.headerStyle{
+	background-color: $primary-color;
+	font-size:$font-size-large;
+	color:$primary-text-color;
+	height: $space-giant;
+}
+
+.titleStyle{
+	line-height: $space-giant;
+}
