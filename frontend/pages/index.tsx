@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import { stringify } from "querystring";
 
 import CategoryList from "../components/elements/Categorylist";
 import Header from "../components/elements/Header";
@@ -10,6 +11,8 @@ import data from "../data/service.json";
 
 const Home: NextPage = () => {
   const services: Category[] = data;
+  const categories: string[] = [];
+  services.forEach((serviceType) => categories.push(serviceType.category));
 
   return (
     <div>
@@ -20,7 +23,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <Header />
+        <Header categories={categories} />
         {services.map((service: Category) => (
           <CategoryList services={service} key={service.category} />
         ))}
