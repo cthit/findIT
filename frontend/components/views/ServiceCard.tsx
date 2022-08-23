@@ -12,12 +12,12 @@ const ServiceCard = ({ service }: ServiceCardProps) => (
     <p className="titleClass">
       <img
         src={`${service.url}/favicon.ico`}
-        className={styles.iconClass}
+        className={`${styles.iconClass} marginTop marginLeft marginRight`}
         alt=" "
       />
       {service.title}
     </p>
-    <p>{service.description}</p>
+    <p className="marginTop">{service.description}</p>
     <a className={styles.aClass} href={service.github_url}>
       GITHUB
     </a>

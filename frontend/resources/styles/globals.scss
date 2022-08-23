@@ -25,12 +25,12 @@ body {
 
 .card {
   @media only screen and (max-width:$breakpoint-mobile){
-    min-height:$card-width/2;
+    min-height:$card-height-mobile;
     max-width:$card-width;
     min-width: $card-width;
   }
   @media only screen and (min-width:$breakpoint-mobile){
-    height: $card-width;
+    height: $card-height-computer;
     min-width: $card-width;
     max-width:$card-width;
   }
@@ -106,7 +106,21 @@ body {
 .marginBottomBig {
   margin-bottom: $space-big;
 }
+.marginLeftGiant {
+  margin-left: $space-giant;
+}
 
+.marginRightGiant {
+  margin-right: $space-giant;
+}
+
+.marginTopGiant {
+  margin-top: $space-giant;
+}
+
+.marginBottomGiant {
+  margin-bottom: $space-giant;
+}
 .preserveWhitespace {
   white-space: pre-wrap;
 }
@@ -142,7 +156,8 @@ p {
 a {
   color: $primary-color;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-size:$font-size-normal;
 
   &:hover {
     text-decoration: underline;
@@ -154,6 +169,16 @@ button {
   background-color:$primary-color;
   text-decoration: none;
   padding: 5pt;
+  font-size:$font-size-normal;
+  transition: all .5s ease;
+  border: 3px solid $primary-color;
+  border-radius: 3px;
+  box-shadow: 4px 2px $gray-color;
+  &:hover{
+    background-color:$primary-color-selected-hover;
+    border-color: $primary-color-selected-hover;
+    box-shadow: 8px 4px $gray-color;
+  }
 }
 
 .noStyleLink {

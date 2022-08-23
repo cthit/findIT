@@ -8,7 +8,7 @@ export interface CategoryListProps {
   services: Category;
 }
 const CategoryList = ({ services }: CategoryListProps) => (
-  <div>
+  <div id={services.category}>
     <p className="titleClass marginLeftBig marginTopBig">{services.category}</p>
     <div className={styles.categoryList}>
       {services.services.map((service) => (

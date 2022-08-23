@@ -8,7 +8,7 @@ $primary-color: #2fafff;
 $secondary-color: #ff9100;
 
 $primary-color-selected: #1fbec8;
-$primary-color-selected-hover: #1fa2ab;
+$primary-color-selected-hover: #0f8fdf;
 $primary-color-selected-active: #108a92;
 
 $gray-color: lightgrey;
@@ -21,6 +21,7 @@ $primary-text-color: #ffffff;
 $secondary-text-color: #000000;
 $link-color: white;
 
+$space-giant:4rem; //64px
 $space-big: 2rem; // 32px
 $space: 1rem; // 16px
 $space-small: 0.5rem; // 8px
@@ -29,8 +30,10 @@ $space-tiny: 0.25rem; // 4px
 $border-radius: 4px;
 
 $card-width: 350px;
+$card-height-computer:300px;
+$card-height-mobile:250px;
 
-$breakpoint-mobile: 600px;
+$breakpoint-mobile: 900px;
 $breakpoint-tablet: 900px;
 $breakpoint-desktop: 1200px;
 $breakpoint-large-desktop: 1800px;
