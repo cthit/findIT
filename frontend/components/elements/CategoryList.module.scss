@@ -17,3 +17,9 @@
 		gap: $space-small;
 	}
 }
+
+.catBox{
+	@media only screen and (min-width:$breakpoint-mobile){
+		margin-left:5*$space-giant;
+	}
+}
