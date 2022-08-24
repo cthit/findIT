@@ -9,5 +9,25 @@
 	@media only screen and (min-width:$breakpoint-mobile){
 		min-width:5*$space-giant;
 		max-width:5*$space-giant;
+		top:0px;
+	}
+	@media only screen and (max-width:$breakpoint-mobile){
+		top:$space-giant;
+
+	}
+}
+
+.shown{
+	z-index:1;
+	@media only screen and (min-width:$breakpoint-mobile){}
+	@media only screen and (max-width:$breakpoint-mobile){}
+}
+.hidden{
+	@media only screen and (min-width:$breakpoint-mobile){
+		z-index:1;
+	}
+	@media only screen and (max-width:$breakpoint-mobile){
+		z-index:-1;
+		left:-5*$space-giant;
 	}
 }
