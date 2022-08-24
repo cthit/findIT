@@ -8,6 +8,23 @@
 }
 
 .titleStyle{
-	margin-left:6*$space-giant;
 	line-height: $space-giant;
+	position:absolute;
+	top:0px;
+	margin-left:auto;
+	margin-right:auto;
+	left:$space-giant;
+	right:$space-giant;
+	text-align: center;
+}
+
+.showNav{
+	height:$space-giant;
+	width:$space-giant;
+	@media only screen and (min-width:$breakpoint-mobile){
+		z-index:1;
+	}
+	@media only screen and (max-width:$breakpoint-mobile){
+		z-index:-1;
+	}
 }
