@@ -246,4 +246,7 @@ button {
 .titleClass{
 	font-weight: bold;
 	font-size: $font-size-large;
+  @media only screen and (max-width:$breakpoint-mobile){
+    text-align: center;
+  }
 }
