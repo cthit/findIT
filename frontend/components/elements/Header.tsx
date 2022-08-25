@@ -12,7 +12,7 @@ const Header = ({ categories, show, setShow }: HeaderProps) => (
     <NavBar categories={categories} show={show} />
     <img
       className={styles.showNav}
-      src="Hamburger_icon.png"
+      src="images/Hamburger_icon.png"
       onClick={() => {
         setShow(!show);
       }}
