@@ -18,9 +18,12 @@
 }
 
 .shown{
-	z-index:1;
-	@media only screen and (min-width:$breakpoint-mobile){}
-	@media only screen and (max-width:$breakpoint-mobile){}
+	@media only screen and (min-width:$breakpoint-mobile){
+		z-index:1;
+	}
+	@media only screen and (max-width:$breakpoint-mobile){
+		z-index:3;
+	}
 }
 .hidden{
 	@media only screen and (min-width:$breakpoint-mobile){

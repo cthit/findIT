@@ -6,6 +6,7 @@ import { stringify } from "querystring";
 
 import CategoryList from "../components/elements/Categorylist";
 import Header from "../components/elements/Header";
+import LightBox from "../components/elements/LightBox";
 import ServiceCard from "../components/views/ServiceCard";
 import { Category } from "../data/category";
 import { Service } from "../data/service";
@@ -26,9 +27,8 @@ const Home: NextPage = () => {
 
       <main>
         <Header categories={categories} show={show} setShow={setShow} />
-        {services.map((service: Category) => (
-          <CategoryList services={service} key={service.category} />
-        ))}
+        <LightBox services={services} show={show} setShow={setShow} />
+
       </main>
     </div>
   );
