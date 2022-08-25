@@ -9,7 +9,7 @@ export interface ServiceCardProps {
 }
 const ServiceCard = ({ service }: ServiceCardProps) => (
   <div className="card">
-    <p className="titleClass">
+    <p className={styles.cardTitle}>
       <img
         src={`${service.url}/favicon.ico`}
         className={`${styles.iconClass} marginTop marginLeft marginRight`}

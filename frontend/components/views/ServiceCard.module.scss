@@ -2,15 +2,9 @@
 
 .buttonClass{
 	position:absolute;
-	@media only screen and (min-width:$breakpoint-mobile){
 		bottom:40px;
 		right:50px;
-		}
 
-	@media only screen and (max-width:$breakpoint-mobile){
-		bottom:20px;
-		right:$space-big;
-		}
 }
 .aClass{
 	position:absolute;
@@ -28,4 +22,9 @@
 .iconClass{
 	height:40px;
 	width:40px;
+}
+
+.cardTitle{
+	font-weight: bold;
+	font-size: $font-size-large;
 }

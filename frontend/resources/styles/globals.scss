@@ -24,16 +24,16 @@ body {
 }
 
 .card {
-  @media only screen and (max-width:$breakpoint-mobile){
+  /*@media only screen and (max-width:$breakpoint-mobile){
     min-height:$card-height-mobile;
     max-width:$card-width;
     min-width: $card-width;
   }
   @media only screen and (min-width:$breakpoint-mobile){
-    height: $card-height-computer;
-    min-width: $card-width;
-    max-width:$card-width;
-  }
+  }*/
+  height: $card-height-computer;
+  min-width: $card-width;
+  max-width:$card-width;
   position:relative;
   background-color: white;
   border-radius: $border-radius;
