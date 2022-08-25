@@ -23,6 +23,8 @@
 	}
 	@media only screen and (max-width:$breakpoint-mobile){
 		z-index:3;
+		animation-name:in;
+		animation-duration: 0.4s;
 	}
 }
 .hidden{
@@ -31,6 +33,25 @@
 	}
 	@media only screen and (max-width:$breakpoint-mobile){
 		z-index:-1;
+		left:-5*$space-giant;
+		animation-name:out;
+		animation-duration:0.4s;
+	}
+}
+
+@keyframes in{
+	0%{
+		left:-5*$space-giant;
+	}
+	100%{
+		left:0px;
+	}
+}
+@keyframes out{
+	0%{
+		left:0px;
+	}
+	100%{
 		left:-5*$space-giant;
 	}
 }
