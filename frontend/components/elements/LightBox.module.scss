@@ -1,0 +1,12 @@
+@import "../../resources/styles/vars.scss";
+
+.hidden{
+	position:absolute;
+	z-index:2;
+	top:$space-giant;
+	bottom: 0;
+	left:0;
+	right:0;
+	background-color: $gray-color-dark;
+	opacity: 0.5;
+}
