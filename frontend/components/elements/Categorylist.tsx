@@ -5,13 +5,15 @@ import ServiceCard from "../views/ServiceCard";
 import styles from "./CategoryList.module.scss";
 
 export interface CategoryListProps {
-  services: Category;
+  categories: Category;
 }
-const CategoryList = ({ services }: CategoryListProps) => (
-  <div id={services.category} className={styles.catBox}>
-    <p className="titleClass marginLeftBig marginTopBig">{services.category}</p>
+const CategoryList = ({ categories }: CategoryListProps) => (
+  <div id={categories.category} className={styles.catBox}>
+    <p className="titleClass marginLeftBig marginTopBig">
+      {categories.category}
+    </p>
     <div className={styles.categoryList}>
-      {services.services.map((service) => (
+      {categories.services.map((service) => (
         <ServiceCard service={service} key={service.title} />
       ))}
     </div>
