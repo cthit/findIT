@@ -1,4 +1,5 @@
 import { Category } from "../../data/category";
+
 import styles from "./NavBar.module.scss";
 
 export interface NavBarProps {
