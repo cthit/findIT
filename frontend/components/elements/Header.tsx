@@ -1,9 +1,10 @@
+import { Category } from "../../data/category";
 import NavBar from "../views/NavBar";
 
 import styles from "./Header.module.scss";
 
 export interface HeaderProps {
-  categories: string[];
+  categories: Category[];
   show: boolean;
   setShow: any;
 }
