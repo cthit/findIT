@@ -1,8 +1,9 @@
 $font: SourceSansPro, -apple-system, system-ui;
 $unicode-font: DejaVuSans, -apple-system, system-ui;
 
+$font-size-small: 1rem;
 $font-size-normal: 1.2rem;
-$font-size-large: 2.4rem;
+$font-size-large: 1.7rem;
 
 $primary-color: #2fafff;
 $secondary-color: #ff9100;
@@ -30,8 +31,8 @@ $space-tiny: 0.25rem; // 4px
 
 $border-radius: 4px;
 
-$card-width: 350px;
-$card-height-computer:300px;
+$card-width: 300px;
+$card-height-computer: 250px;
 $card-height-mobile:250px;
 
 $breakpoint-mobile: 900px;

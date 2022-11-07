@@ -20,13 +20,15 @@ function ServiceCard({ service, darkMode }: ServiceCardProps) {
 
   return (
     <div className={`card ${darkMode ? styles.darkCard : styles.lightCard}`}>
-      <p className={styles.cardTitle}>
+      <p>
         <img
           src={src}
           className={`${styles.iconClass} marginTop marginLeft marginRight`}
           alt={`${service.title}'s icon`}
         />
-        {service.title}
+        <a className={styles.cardTitle} href={service.url}>
+          {service.title}
+        </a>
       </p>
       <p className="marginTop">{service.description}</p>
       <a className={styles.aClass} href={service.github_url}>

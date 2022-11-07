@@ -2,15 +2,15 @@
 
 .buttonClass{
 	position:absolute;
-		bottom:40px;
-		right:50px;
+		bottom: 25px;
+			right: 25px;
 
 }
 .aClass{
 	position:absolute;
 	@media only screen and (min-width:$breakpoint-mobile){
-		bottom:50px;
-		left:50px;
+		bottom: 35px;
+			left: 35px;
 		}
 
 	@media only screen and (max-width:$breakpoint-mobile){
@@ -20,12 +20,15 @@
 }
 
 .iconClass{
-	height:40px;
-	width:40px;
+	height: $space-big;
+		width: $space-big;
 }
 
 .cardTitle{
 	font-weight: bold;
+	color: $secondary-text-color;
+		position: relative;
+		top: -1/4*$space-big;
 	font-size: $font-size-large;
 }
 .darkCard {
