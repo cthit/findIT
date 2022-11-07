@@ -1,15 +1,12 @@
 @import "../../resources/styles/vars.scss";
 
-.navStyle{
-	background-color:white;
-	color:$gray-color;
+.navStyle {
 	height:100rem;
-	position:fixed;
-	padding-left: $space;
+	position: fixed;
 	@media only screen and (min-width:$breakpoint-mobile){
-		min-width:5*$space-giant;
-		max-width:5*$space-giant;
-		top:0px;
+		min-width: 3*$space-giant;
+			max-width: 3*$space-giant;
+			top: $space-giant;
 	}
 	@media only screen and (max-width:$breakpoint-mobile){
 		top:$space-giant;
@@ -54,5 +51,34 @@
 	100%{
 		left:-5*$space-giant;
 		z-index:3;
+	}
+}
+.lightNav {
+	background-color: #f2f2f2;
+	color: $primary-color;
+}
+
+.darkNav {
+	background-color: $gray-color-dark;
+	color: white;
+}
+
+.linkBox {
+	display: flex;
+	flex-direction: column;
+	text-indent: $space;
+
+	@media only screen and (min-width:$breakpoint-mobile) {
+		flex-direction: row;
+	}
+
+	&:hover {
+		background-color: $primary-color;
+		color: white;
+	}
+
+	&:active {
+		background-color: $secondary-color;
+		color: white;
 	}
 }

@@ -6,8 +6,9 @@ import styles from "./ServiceCard.module.scss";
 
 export interface ServiceCardProps {
   service: Service;
+  darkMode: boolean;
 }
-function ServiceCard({ service }: ServiceCardProps) {
+function ServiceCard({ service, darkMode }: ServiceCardProps) {
   let src;
 
   // Use the specified service icon if it exists, otherwise use the service's favicon.
@@ -18,7 +19,7 @@ function ServiceCard({ service }: ServiceCardProps) {
   }
 
   return (
-    <div className="card">
+    <div className={`card ${darkMode ? styles.darkCard : styles.lightCard}`}>
       <p className={styles.cardTitle}>
         <img
           src={src}

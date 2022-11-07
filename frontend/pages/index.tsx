@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import { DarkMode } from "@mui/icons-material";
 import type { NextPage } from "next";
 import Head from "next/head";
 
@@ -8,9 +9,12 @@ import LightBox from "../components/elements/LightBox";
 import { Category } from "../data/category";
 import data from "../data/service.json";
 
+import styles from "./index.module.scss";
+
 const Home: NextPage = () => {
   const categories: Category[] = data;
   const [show, setShow] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
   return (
     <>
       <Head>
@@ -22,9 +26,20 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <Header categories={categories} show={show} setShow={setShow} />
-        <LightBox categories={categories} show={show} setShow={setShow} />
+      <main className={darkMode ? "darkMode" : "lightMode"}>
+        <Header
+          categories={categories}
+          show={show}
+          setShow={setShow}
+          darkMode={darkMode}
+          setDarkMode={setDarkMode}
+        />
+        <LightBox
+          categories={categories}
+          show={show}
+          setShow={setShow}
+          darkMode={darkMode}
+        />
       </main>
     </>
   );

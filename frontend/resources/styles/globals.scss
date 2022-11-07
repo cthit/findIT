@@ -20,7 +20,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+  //background-color: #f0f0f0;
 }
 
 .card {
@@ -170,15 +170,25 @@ button {
   text-decoration: none;
   padding: 5pt;
   font-size:$font-size-normal;
-  transition: all .5s ease;
+  transition: all .3s ease;
   border: 3px solid $primary-color;
   border-radius: 3px;
   box-shadow: 4px 2px $gray-color;
+  position: relative;
   &:hover{
     background-color:$primary-color-selected-hover;
     border-color: $primary-color-selected-hover;
     box-shadow: 8px 4px $gray-color;
-  }
+    margin: 0 2px 4px 0;
+    }
+    
+    &:active {
+      transition: none;
+      background-color: $secondary-color;
+      border-color: $secondary-color;
+      color: white;
+      margin: 0 1px 2px 0;
+}
 }
 
 .noStyleLink {
@@ -249,4 +259,13 @@ button {
   @media only screen and (max-width:$breakpoint-mobile){
     text-align: center;
   }
+}
+.darkMode {
+  background-color: #3e0a5e;
+  color: $primary-text-color;
+}
+
+.lightMode {
+  background-color: azure;
+  color: $secondary-text-color;
 }
