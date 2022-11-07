@@ -1,10 +1,12 @@
 @import "../../resources/styles/vars.scss";
 
-.headerStyle{
-	background-color: $primary-color;
-	font-size:$font-size-large;
-	color:$primary-text-color;
+.headerStyle {
+	font-size: $font-size-large;
 	height: $space-giant;
+	position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+		z-index: 3;
 }
 
 .titleStyle{
@@ -21,10 +23,32 @@
 .showNav{
 	height:$space-giant;
 	width:$space-giant;
+	position: relative;
 	@media only screen and (min-width:$breakpoint-mobile){
-		z-index:1;
+		top: -$space-giant;
+			z-index: 1;
 	}
 	@media only screen and (max-width:$breakpoint-mobile){
-		z-index:-1;
-	}
+		top: 0px;
+			z-index: 1;
+		}
+		}
+		
+		.darkModeIcon {
+			height: 3rem;
+			margin: 0.5rem;
+			width: auto;
+			position: absolute;
+			right: 0vh;
+			color: black;
+			z-index: 2;
+		}
+		
+		.darkMode {
+			background-color: $secondary-color;
+			color: $secondary-text-color;
+		}
+.lightMode {
+	background-color: $primary-color;
+	color: $primary-text-color;
 }

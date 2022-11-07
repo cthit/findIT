@@ -7,26 +7,28 @@ export interface LightBoxProps {
   categories: Category[];
   show: boolean;
   setShow: any;
+  darkMode: boolean;
 }
-function LightBox({ categories, show, setShow }: LightBoxProps) {
-  if (!show)
-    return (
-      <div>
-        {categories.map((service: Category) => (
-          <CategoryList categories={service} key={service.category} />
-        ))}
-      </div>
-    );
-
+function LightBox({ categories, show, setShow, darkMode }: LightBoxProps) {
   return (
     <div
-      onClick={() => {
-        setShow(!show);
-      }}>
+      onClick={
+        show
+          ? () => {
+              setShow(!show);
+            }
+          : () => {
+              true;
+            }
+      }>
       {categories.map((service: Category) => (
-        <CategoryList categories={service} key={service.category} />
+        <CategoryList
+          categories={service}
+          key={service.category}
+          darkMode={darkMode}
+        />
       ))}
-      <div className={styles.hidden}></div>
+      {show ? <div className={styles.hidden}></div> : null}
     </div>
   );
 }

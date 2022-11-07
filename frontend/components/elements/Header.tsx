@@ -1,3 +1,6 @@
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+import LightModeIcon from "@mui/icons-material/LightMode";
+
 import { Category } from "../../data/category";
 import NavBar from "../views/NavBar";
 
@@ -7,10 +10,21 @@ export interface HeaderProps {
   categories: Category[];
   show: boolean;
   setShow: any;
+  darkMode: boolean;
+  setDarkMode: any;
 }
-const Header = ({ categories, show, setShow }: HeaderProps) => (
-  <div className={styles.headerStyle}>
-    <NavBar categories={categories} show={show} />
+const Header = ({
+  categories,
+  show,
+  setShow,
+  darkMode,
+  setDarkMode
+}: HeaderProps) => (
+  <div
+    className={`${styles.headerStyle} ${
+      darkMode ? styles.darkMode : styles.lightMode
+    }`}>
+    <NavBar categories={categories} show={show} darkMode={darkMode} />
     <img
       className={styles.showNav}
       src="images/Hamburger_icon.png"
@@ -19,6 +33,16 @@ const Header = ({ categories, show, setShow }: HeaderProps) => (
       }}
     />
     <h1 className={`${styles.titleStyle}`}>findIT</h1>
+    <a
+      onClick={() => {
+        setDarkMode(!darkMode);
+      }}>
+      {darkMode ? (
+        <DarkModeIcon className={styles.darkModeIcon} />
+      ) : (
+        <LightModeIcon className={styles.darkModeIcon} />
+      )}
+    </a>
   </div>
 );
 
