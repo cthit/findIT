@@ -31,9 +31,12 @@ function ServiceCard({ service, darkMode }: ServiceCardProps) {
         </a>
       </p>
       <p className="marginTop">{service.description}</p>
-      <a className={styles.aClass} href={service.github_url}>
-        GITHUB
-      </a>
+      {service.github_url ? (
+        <a className={styles.aClass} href={service.github_url}>
+          GITHUB
+        </a>
+      ) : null}
+
       <button
         className={styles.buttonClass}
         onClick={() => {
