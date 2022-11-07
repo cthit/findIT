@@ -26,15 +26,16 @@
 
 .cardTitle{
 	font-weight: bold;
-	color: $secondary-text-color;
 		position: relative;
 		top: -1/4*$space-big;
 	font-size: $font-size-large;
 }
 .darkCard {
-	background-color: $gray-color-dark;
+	background-color: $gray-color-darker;
+		color: $primary-text-color;
 }
 
 .lightCard {
 	background-color: white;
+	color: $secondary-text-color;
 }
