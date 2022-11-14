@@ -14,25 +14,15 @@
 .titleStyle{
 	line-height: $space-giant;
 	position:absolute;
-	top:0px;
-	@media only screen and (max-width:$breakpoint-mobile) {
+		top: 0px;
 			left: $space-big;
-		}
-	
-		@media only screen and (min-width:$breakpoint-mobile) {
-			left: $space-giant;
-			right: $space-giant;
-			margin-left: auto;
-			margin-right: auto;
-			text-align: center;
-	
+		text-align: left;
 }
-
 .showNav{
 	height:$space-giant;
 	width:$space-giant;
 	position: absolute;
-		right: $space-big;
+	right: $space-small;
 	@media only screen and (min-width:$breakpoint-mobile){
 		top: -$space-giant;
 			z-index: 1;
@@ -51,4 +41,24 @@
 	right: 0vh;
 	color: black;
 	z-index: 2;
+}
+.catList {
+	@media only screen and (min-width:$breakpoint-mobile) {
+		display: flex;
+		justify-content: space-evenly;
+		left: $space-giant*3;
+		right: $space-giant*3;
+		flex-direction: row;
+		position: absolute;
+		top: ($space-giant - $font-size-large)/2;
+	}
+
+	@media only screen and (max-width:$breakpoint-mobile) {
+		position: absolute;
+		top: -$space-giant;
+	}
+}
+
+.catStyle {
+	font-size: $font-size-large
 }
