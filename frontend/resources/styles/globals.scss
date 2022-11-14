@@ -1,4 +1,5 @@
 @import "vars";
+@import "darkMode_colors";
 
 @media print {
   /* All your print styles go here */
@@ -154,7 +155,7 @@ p {
 }
 
 a {
-  color: $primary-color;
+  color: var(--highlight2);
   text-decoration: none;
   font-weight: 600;
   font-size:$font-size-normal;
@@ -165,28 +166,28 @@ a {
 }
 
 button {
-  color: $primary-text-color;
-  background-color:$primary-color;
+  color: var(--text);
+    background-color: var(--highlight2);
   text-decoration: none;
   padding: 5pt;
   font-size:$font-size-normal;
   transition: all .3s ease;
-  border: 3px solid $primary-color;
+  border: 3px solid var(--highlight2);
   border-radius: 3px;
-  box-shadow: 4px 2px $gray-color;
+  box-shadow: 4px 2px $shadow;
   position: relative;
   &:hover{
-    background-color:$primary-color-selected-hover;
-    border-color: $primary-color-selected-hover;
-    box-shadow: 8px 4px $gray-color;
+    background-color: var(--highlight2-hover);
+      border-color: var(--highlight2-hover);
+      box-shadow: 8px 4px $shadow;
     margin: 0 2px 4px 0;
     }
 
     &:active {
       transition: none;
-      background-color: $secondary-color;
-      border-color: $secondary-color;
-      color: white;
+      background-color: var(--highlight1);
+        border-color: var(--highlight1);
+        color: var(--text);
       margin: 0 1px 2px 0;
 }
 }
@@ -261,11 +262,11 @@ button {
   }
 }
 .darkMode {
-  background-color: $dark-primary-color;
-  color: $primary-text-color;
+  background-color: var(--site-background);
+    color: var(--text);
 }
 
 .lightMode {
-  background-color: azure;
-  color: $secondary-text-color;
+  background-color: var(--site-background);
+    color: var(--text);
 }

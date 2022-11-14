@@ -7,9 +7,8 @@ export interface LightBoxProps {
   categories: Category[];
   show: boolean;
   setShow: any;
-  darkMode: boolean;
 }
-function LightBox({ categories, show, setShow, darkMode }: LightBoxProps) {
+function LightBox({ categories, show, setShow }: LightBoxProps) {
   return (
     <div
       onClick={
@@ -22,11 +21,7 @@ function LightBox({ categories, show, setShow, darkMode }: LightBoxProps) {
             }
       }>
       {categories.map((service: Category) => (
-        <CategoryList
-          categories={service}
-          key={service.category}
-          darkMode={darkMode}
-        />
+        <CategoryList categories={service} key={service.category} />
       ))}
       {show ? <div className={styles.hidden}></div> : null}
     </div>

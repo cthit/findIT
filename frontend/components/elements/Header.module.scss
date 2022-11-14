@@ -1,6 +1,8 @@
 @import "../../resources/styles/vars.scss";
 
 .headerStyle {
+	background-color: var(--background);
+		color: var(--text);
 	font-size: $font-size-large;
 	height: $space-giant;
 	position: -webkit-sticky;
@@ -34,21 +36,12 @@
 		}
 		}
 
-		.darkModeIcon {
-			height: 3rem;
-			margin: 0.5rem;
-			width: auto;
-			position: absolute;
-			right: 0vh;
-			color: black;
-			z-index: 2;
-		}
-
-		.darkMode {
-			background-color: $dark-secondary-color;
-			color: $secondary-text-color;
-		}
-.lightMode {
-	background-color: $primary-color;
-	color: $primary-text-color;
+.darkModeIcon {
+	height: 3rem;
+	margin: 0.5rem;
+	width: auto;
+	position: absolute;
+	right: 0vh;
+	color: black;
+	z-index: 2;
 }

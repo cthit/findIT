@@ -3,6 +3,8 @@
 .navStyle {
 	height:100rem;
 	position: fixed;
+	background-color: var(--background);
+		color: var(--highlight2);
 	@media only screen and (min-width:$breakpoint-mobile){
 		min-width: 3*$space-giant;
 			max-width: 3*$space-giant;
@@ -53,15 +55,6 @@
 		z-index:3;
 	}
 }
-.lightNav {
-	background-color: white;
-	color: $primary-color;
-}
-
-.darkNav {
-	background-color: $gray-color-darker;
-	color: white;
-}
 
 .linkBox {
 	display: flex;
@@ -73,12 +66,12 @@
 	}
 
 	&:hover {
-		background-color: $primary-color;
-		color: white;
+		background-color: var(--highlight1);
+			color: var(--text);
 	}
 
 	&:active {
-		background-color: $secondary-color;
-		color: white;
+		background-color: var(--highlight2);
+			color: var(--text);
 	}
 }

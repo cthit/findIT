@@ -20,10 +20,7 @@ const Header = ({
   darkMode,
   setDarkMode
 }: HeaderProps) => (
-  <div
-    className={`${styles.headerStyle} ${
-      darkMode ? styles.darkMode : styles.lightMode
-    }`}>
+  <div className={`${styles.headerStyle}`}>
     <NavBar categories={categories} show={show} darkMode={darkMode} />
     <img
       className={styles.showNav}
