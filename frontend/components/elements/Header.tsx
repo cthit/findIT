@@ -22,6 +22,7 @@ const Header = ({
 }: HeaderProps) => (
   <div className={`${styles.headerStyle}`}>
     <NavBar categories={categories} show={show} />
+    <h1 className={`${styles.titleStyle}`}>findIT</h1>
     <img
       className={styles.showNav}
       src="images/Hamburger_icon.png"
@@ -29,7 +30,6 @@ const Header = ({
         setShow(!show);
       }}
     />
-    <h1 className={`${styles.titleStyle}`}>findIT</h1>
     <a
       onClick={() => {
         setDarkMode(!darkMode);
