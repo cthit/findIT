@@ -21,7 +21,7 @@ const Header = ({
   setDarkMode
 }: HeaderProps) => (
   <div className={`${styles.headerStyle}`}>
-    <NavBar categories={categories} show={show} darkMode={darkMode} />
+    <NavBar categories={categories} show={show} />
     <img
       className={styles.showNav}
       src="images/Hamburger_icon.png"

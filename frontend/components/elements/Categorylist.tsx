@@ -1,5 +1,4 @@
 import { Category } from "../../data/category";
-import { Service } from "../../data/service";
 import ServiceCard from "../views/ServiceCard";
 
 import styles from "./CategoryList.module.scss";

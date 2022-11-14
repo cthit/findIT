@@ -29,7 +29,7 @@ const switchMode = (darkMode: boolean) => {
     docStyle.setProperty("--highlight2-hover", "#00d9d9");
     docStyle.setProperty("--background", "#004e98");
     docStyle.setProperty("--site-background", "#fffcf2");
-    docStyle.setProperty("--text", "#000000");
+    docStyle.setProperty("--text", "#ffffff");
   }
 };
 
@@ -60,12 +60,7 @@ const Home: NextPage = () => {
           darkMode={darkMode}
           setDarkMode={setDarkMode}
         />
-        <LightBox
-          categories={categories}
-          show={show}
-          setShow={setShow}
-          darkMode={darkMode}
-        />
+        <LightBox categories={categories} show={show} setShow={setShow} />
       </main>
     </>
   );
