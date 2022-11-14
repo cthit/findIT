@@ -18,7 +18,7 @@ function ServiceCard({ service }: ServiceCardProps) {
   }
 
   return (
-    <div className={styles.cardClass}>
+    <div className={`${styles.cardClass} card`}>
       <p>
         <img
           src={src}

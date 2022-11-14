@@ -8,6 +8,7 @@
 }
 .aClass{
 	position:absolute;
+	color: var(--text);
 	@media only screen and (min-width:$breakpoint-mobile){
 		bottom: 35px;
 			left: 35px;
@@ -22,6 +23,7 @@
 .iconClass{
 	height: $space-big;
 		width: $space-big;
+		filter: invert(90%);
 }
 
 .cardTitle{
@@ -29,6 +31,7 @@
 		position: relative;
 		top: -1/4*$space-big;
 	font-size: $font-size-large;
+	color: var(--text);
 }
 /*.darkCard {
 	background-color: var(--background);
