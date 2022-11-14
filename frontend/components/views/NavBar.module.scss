@@ -8,17 +8,19 @@
 	@media only screen and (min-width:$breakpoint-mobile){
 		min-width: 3*$space-giant;
 			max-width: 3*$space-giant;
-			top: $space-giant;
+			right: -3*$space-giant;
 	}
 	@media only screen and (max-width:$breakpoint-mobile){
-		top:$space-giant;
-
+		top: $space-giant;
+			min-width: 100vw;
+			max-width: 100vw;
 	}
 }
 
 .shown{
 	@media only screen and (min-width:$breakpoint-mobile){
 		z-index:1;
+		right: 0px;
 	}
 	@media only screen and (max-width:$breakpoint-mobile){
 		z-index:3;
@@ -31,7 +33,7 @@
 		z-index:1;
 	}
 	@media only screen and (max-width:$breakpoint-mobile){
-		left:-5*$space-giant;
+		right: -200vw;
 		animation-name:out;
 		animation-duration:0.4s;
 	}
@@ -39,19 +41,19 @@
 
 @keyframes in{
 	0%{
-		left:-5*$space-giant;
+		right: -100vw;
 	}
 	100%{
-		left:0px;
+		right: 0px;
 	}
 }
 @keyframes out{
 	0%{
-		left:0px;
+		right: 0px;
 		z-index:3;
 	}
 	100%{
-		left:-5*$space-giant;
+		right: -100vw;
 		z-index:3;
 	}
 }
