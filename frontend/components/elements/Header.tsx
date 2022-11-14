@@ -23,13 +23,16 @@ const Header = ({
   <div className={`${styles.headerStyle}`}>
     <NavBar categories={categories} show={show} />
     <h1 className={`${styles.titleStyle}`}>findIT</h1>
-    <img
-      className={styles.showNav}
-      src="images/Hamburger_icon.png"
-      onClick={() => {
-        setShow(!show);
-      }}
-    />
+    <div className={styles.catList}>
+      {categories.map((category) => (
+        <a
+          className={styles.catStyle}
+          key={category.category}
+          href={`#${category.category}`}>
+          {category.category}
+        </a>
+      ))}
+    </div>
     <a
       onClick={() => {
         setDarkMode(!darkMode);
@@ -40,6 +43,13 @@ const Header = ({
         <LightModeIcon className={styles.darkModeIcon} />
       )}
     </a>
+    <img
+      className={styles.showNav}
+      src="images/Hamburger_icon.png"
+      onClick={() => {
+        setShow(!show);
+      }}
+    />
   </div>
 );
 
