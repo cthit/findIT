@@ -1,10 +1,27 @@
 $font: SourceSansPro, -apple-system, system-ui;
 $unicode-font: DejaVuSans, -apple-system, system-ui;
+$font-size-small: 1rem !default;
+$font-size-normal: 1.2rem !default;
+$font-size-large: 1.7rem !default;
 
-$font-size-small: 1rem;
-$font-size-normal: 1.2rem;
-$font-size-large: 1.7rem;
+$dark-theme: false !default;
 
+
+/*@if $dark-theme {
+	$highlight1: #de3c4b;
+	$hightlight1-hover: #ff8c89;
+	$highlight2: #2191fb;
+	$highlight2-hover: #0171db;
+	$background: #2b303a;
+	$site-background: #111317;
+	$text: #ffffff;
+
+}*/
+
+// Colours
+
+$shadow: #00000088;
+/*
 $primary-color: #2fafff;
 $secondary-color: #ff9100;
 
@@ -19,7 +36,7 @@ $gray-color-hover: #f1f1f1;
 $gray-color-dark:#a1a1a1;
 $gray-color-darker: #231F20;
 $gray-color-active: #b0b0b0;
-
+*/
 $border-color: rgba(0, 0, 0, 0.3);
 
 $primary-text-color: #ffffff;

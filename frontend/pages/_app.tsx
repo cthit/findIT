@@ -1,3 +1,4 @@
+import "../resources/styles/darkMode_colors.css";
 import "../resources/styles/globals.scss";
 import "../resources/styles/source_sans_pro.scss";
 import "../resources/styles/deja_vu_sans.scss";

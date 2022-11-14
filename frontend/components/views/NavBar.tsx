@@ -5,14 +5,11 @@ import styles from "./NavBar.module.scss";
 export interface NavBarProps {
   categories: Category[];
   show: boolean;
-  darkMode: boolean;
 }
-function NavBar({ categories, show, darkMode }: NavBarProps) {
+function NavBar({ categories, show }: NavBarProps) {
   return (
     <div
-      className={`${styles.navStyle} ${show ? styles.shown : styles.hidden} ${
-        darkMode ? styles.darkNav : styles.lightNav
-      }`}>
+      className={`${styles.navStyle} ${show ? styles.shown : styles.hidden}`}>
       <p>Categories</p>
       {categories.map((category) => (
         <p key={category.category}>
