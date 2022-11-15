@@ -1,16 +1,18 @@
 import { Category } from "../../data/category";
+import DarkModeSwitch from "../elements/DarkModeSwitch";
 
 import styles from "./NavBar.module.scss";
 
 export interface NavBarProps {
   categories: Category[];
   show: boolean;
+  darkMode: boolean;
+  setDarkMode: any;
 }
-function NavBar({ categories, show }: NavBarProps) {
+function NavBar({ categories, show, darkMode, setDarkMode }: NavBarProps) {
   return (
     <div
       className={`${styles.navStyle} ${show ? styles.shown : styles.hidden}`}>
-      <p>Categories</p>
       {categories.map((category) => (
         <p key={category.category}>
           <a href={`#${category.category}`}>
@@ -18,6 +20,7 @@ function NavBar({ categories, show }: NavBarProps) {
           </a>
         </p>
       ))}
+      <DarkModeSwitch darkMode={darkMode} setDarkMode={setDarkMode} />
     </div>
   );
 }

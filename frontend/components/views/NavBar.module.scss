@@ -5,6 +5,7 @@
 	position: fixed;
 	background-color: var(--background);
 		color: var(--highlight2);
+	font-size: 2*$font-size-normal;
 	@media only screen and (min-width:$breakpoint-mobile){
 		min-width: 3*$space-giant;
 			max-width: 3*$space-giant;
@@ -61,12 +62,11 @@
 .linkBox {
 	display: flex;
 	flex-direction: column;
-	text-indent: $space;
-
-	@media only screen and (min-width:$breakpoint-mobile) {
-		flex-direction: row;
-	}
-
+		height: $space-giant;
+			border: 1px solid black;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
 	&:hover {
 		background-color: var(--highlight1);
 			color: var(--text);
