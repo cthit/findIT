@@ -1,9 +1,7 @@
-import DarkModeIcon from "@mui/icons-material/DarkMode";
-import LightModeIcon from "@mui/icons-material/LightMode";
-
 import { Category } from "../../data/category";
 import NavBar from "../views/NavBar";
 
+import DarkModeSwitch from "./DarkModeSwitch";
 import styles from "./Header.module.scss";
 
 export interface HeaderProps {
@@ -21,7 +19,12 @@ const Header = ({
   setDarkMode
 }: HeaderProps) => (
   <div className={`${styles.headerStyle}`}>
-    <NavBar categories={categories} show={show} />
+    <NavBar
+      categories={categories}
+      show={show}
+      darkMode={darkMode}
+      setDarkMode={setDarkMode}
+    />
     <h1 className={`${styles.titleStyle}`}>findIT</h1>
     <div className={styles.catList}>
       {categories.map((category) => (
@@ -33,16 +36,9 @@ const Header = ({
         </a>
       ))}
     </div>
-    <a
-      onClick={() => {
-        setDarkMode(!darkMode);
-      }}>
-      {darkMode ? (
-        <DarkModeIcon className={styles.darkModeIcon} />
-      ) : (
-        <LightModeIcon className={styles.darkModeIcon} />
-      )}
-    </a>
+    <div className={styles.darkModeSwitchInHeaderStyle}>
+      <DarkModeSwitch darkMode={darkMode} setDarkMode={setDarkMode} />
+    </div>
     <img
       className={styles.showNav}
       src="images/Hamburger_icon.png"

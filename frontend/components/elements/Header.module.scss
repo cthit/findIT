@@ -62,3 +62,18 @@
 .catStyle {
 	font-size: $font-size-large
 }
+.darkModeSwitchInHeaderStyle {
+	position: absolute;
+	right: 0px;
+
+	@media only screen and (min-width:$breakpoint-mobile) {
+		//top: $space-big;
+		right: $space-big;
+	}
+
+	@media only screen and (max-width:$breakpoint-mobile) {
+		position: absolute;
+		right: -100vw;
+	}
+
+}
