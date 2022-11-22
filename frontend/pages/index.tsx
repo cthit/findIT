@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 
-import { DarkMode } from "@mui/icons-material";
 import type { NextPage } from "next";
 import Head from "next/head";
 
@@ -8,8 +7,6 @@ import Header from "../components/elements/Header";
 import LightBox from "../components/elements/LightBox";
 import { Category } from "../data/category";
 import data from "../data/service.json";
-
-import styles from "./index.module.scss";
 
 const switchMode = (darkMode: boolean) => {
   const docStyle = document.documentElement.style;

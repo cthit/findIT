@@ -3,10 +3,10 @@
 .darkModeSwitchStyle {
 	color: black;
 	height: $space-big;
-	width: $space-big;
+		width: $space-big;
 	position: absolute;
-	left: 0.1*$space-big;
-	top: 0.1*$space-big;
+	/*left: 0.1*$space-big;
+				top: 0.1*$space-big;*/
 
 	@media only screen and (min-width:$breakpoint-mobile) {}
 
@@ -15,8 +15,8 @@
 
 .slider_in {
 	height: $space-big;
-	position: relative;
 	width: $space-big;
+	position: relative;
 	left: 0;
 	background-color: #00a6a6;
 	border-radius: $space-big/2;

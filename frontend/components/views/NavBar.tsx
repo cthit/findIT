@@ -15,8 +15,8 @@ function NavBar({ categories, show, darkMode, setDarkMode }: NavBarProps) {
       className={`${styles.navStyle} ${show ? styles.shown : styles.hidden}`}>
       {categories.map((category) => (
         <p key={category.category}>
-          <a href={`#${category.category}`}>
-            <div className={styles.linkBox}>{category.category}</div>
+          <a href={`#${category.category}`} className={styles.linkBox}>
+            {category.category}
           </a>
         </p>
       ))}
