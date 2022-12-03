@@ -66,8 +66,9 @@
 	position: absolute;
 	right: 0px;
 
+
 	@media only screen and (min-width:$breakpoint-mobile) {
-		//top: $space-big;
+		top: $space;
 		right: $space-big;
 	}
 
