@@ -21,23 +21,34 @@ const switchMode = (darkMode: boolean) => {
     docStyle.setProperty("--text", "#ffffff");
   } else {
     docStyle.setProperty("--highlight1", "#ff5e5b");
-    docStyle.setProperty("--highlight2", "#00a6a6");
+    docStyle.setProperty("--highlight2", "#a1f1fb");
     docStyle.setProperty("--highlight1-hover", "#ff8c89");
-    docStyle.setProperty("--highlight2-hover", "#00d9d9");
+    docStyle.setProperty("--highlight2-hover", "#81e1eb");
     docStyle.setProperty("--background", "#004e98");
     docStyle.setProperty("--site-background", "#fffcf2");
     docStyle.setProperty("--text", "#ffffff");
   }
 };
 
+const checkClientMode = () => {
+  if (typeof window !== "undefined") {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    )
+      return true;
+  }
+  return false;
+};
+
 const Home: NextPage = () => {
   const categories: Category[] = data;
   const [show, setShow] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
-
+  const [darkMode, setDarkMode] = useState(checkClientMode());
   useEffect(() => {
     switchMode(darkMode);
   });
+
   return (
     <>
       <Head>

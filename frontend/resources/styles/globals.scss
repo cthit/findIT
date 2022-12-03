@@ -167,18 +167,18 @@ a {
 
 button {
   color: var(--text);
-    background-color: var(--highlight2);
+    background-color: var(--highlight1);
   text-decoration: none;
   padding: 5pt;
   font-size:$font-size-normal;
   transition: all .3s ease;
-  border: 3px solid var(--highlight2);
+  border: 3px solid var(--highlight1);
   border-radius: 3px;
   box-shadow: 4px 2px $shadow;
   position: relative;
   &:hover{
-    background-color: var(--highlight2-hover);
-      border-color: var(--highlight2-hover);
+    background-color: var(--highlight1-hover);
+      border-color: var(--highlight1-hover);
       box-shadow: 8px 4px $shadow;
     margin: 0 2px 4px 0;
     }
