@@ -7,7 +7,8 @@ export interface CategoryListProps {
   categories: Category;
 }
 const CategoryList = ({ categories }: CategoryListProps) => (
-  <div id={categories.category} className={styles.catBox}>
+  <div className={styles.catBox}>
+    <div id={categories.category} className={styles.idContainer} />
     <p className="titleClass marginLeftBig marginTopBig">
       {categories.category}
     </p>
