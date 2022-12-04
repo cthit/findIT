@@ -256,10 +256,12 @@ button {
 
 .titleClass{
 	font-weight: bold;
-	font-size: $font-size-large;
+  color: var(--highlight1);
+    font-size: 1.2*$font-size-large;
   @media only screen and (max-width:$breakpoint-mobile){
     text-align: center;
   }
+        margin-bottom:$space-small;
 }
 .darkMode {
   background-color: var(--site-background);
