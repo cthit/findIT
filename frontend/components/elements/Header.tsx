@@ -18,7 +18,7 @@ const Header = ({
   darkMode,
   setDarkMode
 }: HeaderProps) => (
-  <div className={`${styles.headerStyle}`}>
+  <nav className={`${styles.headerStyle}`}>
     <NavBar
       categories={categories}
       show={show}
@@ -46,7 +46,7 @@ const Header = ({
         setShow(!show);
       }}
     />
-  </div>
+  </nav>
 );
 
 export default Header;
