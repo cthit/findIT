@@ -22,6 +22,7 @@ const Header = ({
     <NavBar
       categories={categories}
       show={show}
+      setShow={setShow}
       darkMode={darkMode}
       setDarkMode={setDarkMode}
     />

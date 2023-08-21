@@ -6,16 +6,26 @@ import styles from "./NavBar.module.scss";
 export interface NavBarProps {
   categories: Category[];
   show: boolean;
+  setShow: any;
   darkMode: boolean;
   setDarkMode: any;
 }
-function NavBar({ categories, show, darkMode, setDarkMode }: NavBarProps) {
+function NavBar({
+  categories,
+  show,
+  setShow,
+  darkMode,
+  setDarkMode
+}: NavBarProps) {
   return (
     <div
       className={`${styles.navStyle} ${show ? styles.shown : styles.hidden}`}>
       {categories.map((category) => (
         <p key={category.category}>
-          <a href={`#${category.category}`} className={styles.linkBox}>
+          <a
+            href={`#${category.category}`}
+            className={styles.linkBox}
+            onClick={() => setShow(!show)}>
             {category.category}
           </a>
         </p>
