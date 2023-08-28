@@ -73,8 +73,7 @@
 	}
 
 	@media only screen and (max-width:$breakpoint-mobile) {
-		position: absolute;
-		right: -100vw;
+		display:none;
 	}
 
 }
