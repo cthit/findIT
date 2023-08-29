@@ -1,6 +1,3 @@
-import DarkModeIcon from "@mui/icons-material/DarkMode";
-import LightModeIcon from "@mui/icons-material/LightMode";
-
 import styles from "./DarkModeSwitch.module.scss";
 
 export interface DarkModeProps {
@@ -15,13 +12,7 @@ const DarkModeSwitch = ({ darkMode, setDarkMode }: DarkModeProps) => (
     onClick={() => {
       setDarkMode(!darkMode);
     }}>
-    <div className={darkMode ? styles.slider_out : styles.slider_in}>
-      {darkMode ? (
-        <DarkModeIcon className={styles.darkModeSwitchStyle} />
-      ) : (
-        <LightModeIcon className={styles.darkModeSwitchStyle} />
-      )}
-    </div>
+    <div className={darkMode ? styles.slider_out : styles.slider_in} />
   </div>
 );
 
