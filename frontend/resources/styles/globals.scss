@@ -181,6 +181,7 @@ button {
       border-color: var(--highlight1-hover);
       box-shadow: 8px 4px $shadow;
     margin: 0 2px 4px 0;
+    cursor: pointer;
     }
 
     &:active {

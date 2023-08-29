@@ -31,10 +31,7 @@ const switchMode = (darkMode: boolean) => {
 
 const checkClientMode = () => {
   if (typeof window !== "undefined") {
-    if (
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-    )
+    if (window.matchMedia?.("(prefers-color-scheme: dark)").matches)
       return true;
   }
   return false;
@@ -47,7 +44,6 @@ const Home: NextPage = () => {
   useEffect(() => {
     switchMode(darkMode);
   });
-
   return (
     <>
       <Head>
