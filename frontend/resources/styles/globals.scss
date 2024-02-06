@@ -1,0 +1,275 @@
+@import "vars";
+@import "darkMode_colors";
+
+@media print {
+  /* All your print styles go here */
+  header, footer, nav, button { display: none !important; }
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: $font;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  //background-color: #f0f0f0;
+}
+
+.card {
+  /*@media only screen and (max-width:$breakpoint-mobile){
+    min-height:$card-height-mobile;
+    max-width:$card-width;
+    min-width: $card-width;
+  }
+  @media only screen and (min-width:$breakpoint-mobile){
+  }*/
+  height: $card-height-computer;
+  min-width: $card-width;
+  max-width:$card-width;
+  position:relative;
+  background-color: white;
+  border-radius: $border-radius;
+  padding: 10px;
+    font-size: $font-size-small;
+  box-shadow: 1px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.paddingSides {
+  padding: 0 $space-small;
+}
+
+.padding {
+  padding: $space-small;
+}
+
+.margin {
+  margin: $space-small;
+}
+
+.marginSides {
+  margin: 0 $space-small;
+}
+
+.marginLeftSmall {
+  margin-left: $space-tiny;
+}
+
+.marginRightSmall {
+  margin-right: $space-tiny;
+}
+
+.marginTopSmall {
+  margin-top: $space-tiny;
+}
+
+.marginBottomSmall {
+  margin-bottom: $space-tiny;
+}
+
+.marginLeft {
+  margin-left: $space-small;
+}
+
+.marginRight {
+  margin-right: $space-small;
+}
+
+.marginTop {
+  margin-top: $space-small;
+}
+
+.marginBottom {
+  margin-bottom: $space-small;
+}
+
+.marginLeftBig {
+  margin-left: $space-big;
+}
+
+.marginRightBig {
+  margin-right: $space-big;
+}
+
+.marginTopBig {
+  margin-top: $space-big;
+}
+
+.marginBottomBig {
+  margin-bottom: $space-big;
+}
+.marginLeftGiant {
+  margin-left: $space-giant;
+}
+
+.marginRightGiant {
+  margin-right: $space-giant;
+}
+
+.marginTopGiant {
+  margin-top: $space-giant;
+}
+
+.marginBottomGiant {
+  margin-bottom: $space-giant;
+}
+.preserveWhitespace {
+  white-space: pre-wrap;
+}
+
+.space {
+  width: $space;
+  height: $space;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--highlight2);
+  text-decoration: none;
+  font-weight: 600;
+  font-size:$font-size-normal;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  color: var(--text);
+    background-color: var(--highlight1);
+  text-decoration: none;
+  padding: 5pt;
+  font-size:$font-size-normal;
+  transition: all .3s ease;
+  border: 3px solid var(--highlight1);
+  border-radius: 3px;
+  box-shadow: 4px 2px $shadow;
+  position: relative;
+  &:hover{
+    background-color: var(--highlight1-hover);
+      border-color: var(--highlight1-hover);
+      box-shadow: 8px 4px $shadow;
+    margin: 0 2px 4px 0;
+    cursor: pointer;
+    }
+
+    &:active {
+      transition: none;
+      background-color: var(--highlight1);
+        border-color: var(--highlight1);
+        color: var(--text);
+      margin: 0 1px 2px 0;
+}
+}
+
+.noStyleLink {
+  color: unset;
+  text-decoration: unset;
+}
+
+.errorText {
+  color: red;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.verticalCenterRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: $space-small;
+}
+
+.centeredRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.fullHeight {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.fill {
+  flex: 1;
+}
+
+.breakWord {
+  word-break: break-all;
+}
+
+.centerText {
+  width: 100%;
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.titleClass{
+	font-weight: bold;
+  color: var(--highlight1);
+    font-size: 1.2*$font-size-large;
+  @media only screen and (max-width:$breakpoint-mobile){
+    text-align: center;
+  }
+        margin-bottom:$space-small;
+}
+.darkMode {
+  background-color: var(--site-background);
+    color: var(--text);
+}
+
+.lightMode {
+  background-color: var(--site-background);
+    color: var(--text);
+}

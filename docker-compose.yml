@@ -1,11 +1,11 @@
-version: "2"
+version: "3"
 services:
   frontend:
+    image: findit_frontend
     build:
-      context: ./frontend
+      context: frontend
       dockerfile: dev.Dockerfile
-    image: findit:dev
     ports:
-      - "3000:3000"
+      - 3000:3000
     volumes:
-      - ./frontend:/usr/src/app
+      - ./frontend:/app

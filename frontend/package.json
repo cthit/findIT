@@ -1,32 +1,44 @@
 {
-    "name": "findit",
-    "version": "1.0.0",
-    "private": true,
-    "dependencies": {
-        "@cthit/react-digit-components": "^1.0.2",
-        "font-awesome": "^4.7.0",
-        "axios": "0.19.2",
-        "react": "16.13.1",
-        "react-dom": "16.13.1",
-        "react-router-dom": "5.2.0",
-        "styled-components": "5.1.1"
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test --env=jsdom",
-        "eject": "react-scripts eject"
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    }
+  "name": "findit",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:check": "eslint --ignore-path .gitignore --ext .ts,.tsx . && yarn prettier:check",
+    "lint:fix": "eslint --ignore-path .gitignore --ext .ts,.tsx --fix . && yarn prettier:fix",
+    "prettier:check": "prettier --list-different --ignore-path .gitignore \"**/*.{ts,tsx,js,jsx,json,yml,yaml}\"",
+    "prettier:fix": "prettier --write --loglevel error --ignore-path .gitignore \"**/*.{ts,tsx,js,jsx,json,yml,yaml}\""
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-brands-svg-icons": "^6.0.0",
+    "@fortawesome/free-regular-svg-icons": "^6.0.0",
+    "@fortawesome/free-solid-svg-icons": "^6.0.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/icons-material": "^5.10.9",
+    "@mui/material": "^5.10.12",
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.49.9"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.21",
+    "@types/react": "18.0.1",
+    "@types/react-color": "^3.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "8.10.0",
+    "eslint-config-next": "12.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "prettier": "^2.2.1",
+    "typescript": "4.7.4"
+  }
 }

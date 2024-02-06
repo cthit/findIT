@@ -1,0 +1,79 @@
+@import "../../resources/styles/vars.scss";
+
+.navStyle {
+	height:100rem;
+	position: fixed;
+	background-color: var(--background);
+		color: var(--highlight2);
+	font-size: 2*$font-size-normal;
+	@media only screen and (min-width:$breakpoint-mobile){
+		min-width: 3*$space-giant;
+			max-width: 3*$space-giant;
+			right: -3*$space-giant;
+	}
+	@media only screen and (max-width:$breakpoint-mobile){
+		top: $space-giant;
+			min-width: 100vw;
+			max-width: 100vw;
+	}
+}
+
+.shown{
+	@media only screen and (min-width:$breakpoint-mobile){
+		z-index:1;
+		right: 0px;
+	}
+	@media only screen and (max-width:$breakpoint-mobile){
+		z-index:3;
+		animation-name:in;
+		animation-duration: 0.4s;
+	}
+}
+.hidden{
+	@media only screen and (min-width:$breakpoint-mobile){
+		z-index:1;
+	}
+	@media only screen and (max-width:$breakpoint-mobile){
+		right: -200vw;
+		animation-name:out;
+		animation-duration:0.4s;
+	}
+}
+
+@keyframes in{
+	0%{
+		right: -100vw;
+	}
+	100%{
+		right: 0px;
+	}
+}
+@keyframes out{
+	0%{
+		right: 0px;
+		z-index:3;
+	}
+	100%{
+		right: -100vw;
+		z-index:3;
+	}
+}
+
+.linkBox {
+	display: flex;
+	flex-direction: column;
+		height: $space-giant;
+			border: 1px solid black;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+	&:hover {
+		background-color: var(--highlight1);
+			color: var(--text);
+	}
+
+	&:active {
+		background-color: var(--highlight2);
+			color: var(--text);
+	}
+}

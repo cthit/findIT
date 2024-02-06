@@ -1,0 +1,60 @@
+$font: SourceSansPro, -apple-system, system-ui;
+$unicode-font: DejaVuSans, -apple-system, system-ui;
+$font-size-small: 1rem !default;
+$font-size-normal: 1.2rem !default;
+$font-size-large: 1.7rem !default;
+
+
+
+/*@if $dark-theme {
+	$highlight1: #de3c4b;
+	$hightlight1-hover: #ff8c89;
+	$highlight2: #2191fb;
+	$highlight2-hover: #0171db;
+	$background: #2b303a;
+	$site-background: #111317;
+	$text: #ffffff;
+
+}*/
+
+// Colours
+
+$shadow: #00000088;
+/*
+$primary-color: #2fafff;
+$secondary-color: #ff9100;
+
+$primary-color-selected: #1fbec8;
+$primary-color-selected-hover: #0f8fdf;
+$primary-color-selected-active: #108a92;
+
+$dark-primary-color: #BB4430;
+$dark-secondary-color: #A11692;
+$gray-color: lightgrey;
+$gray-color-hover: #f1f1f1;
+$gray-color-dark:#a1a1a1;
+$gray-color-darker: #231F20;
+$gray-color-active: #b0b0b0;
+*/
+$border-color: rgba(0, 0, 0, 0.3);
+
+$primary-text-color: #ffffff;
+$secondary-text-color: #000000;
+$link-color: white;
+
+$space-giant:4rem; //64px
+$space-big: 2rem; // 32px
+$space: 1rem; // 16px
+$space-small: 0.5rem; // 8px
+$space-tiny: 0.25rem; // 4px
+
+$border-radius: 4px;
+
+$card-width: 300px;
+$card-height-computer: 250px;
+$card-height-mobile:250px;
+
+$breakpoint-mobile: 900px;
+$breakpoint-tablet: 900px;
+$breakpoint-desktop: 1200px;
+$breakpoint-large-desktop: 1800px;

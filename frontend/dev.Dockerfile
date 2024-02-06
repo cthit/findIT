@@ -1,11 +1,8 @@
-from node:latest
+FROM node:lts
 
-RUN mkdir /usr/src/app
-WORKDIR /usr/src/app
+WORKDIR /app
 
-COPY package.json /package.json
 
-RUN yarn install 
-RUN yarn global add react-scripts 
+EXPOSE 3000
 
-CMD yarn start
+CMD yarn && yarn dev
