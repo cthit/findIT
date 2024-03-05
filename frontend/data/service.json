@@ -139,13 +139,6 @@
                 "icon": "eye"
             },
             {
-                "title": "IRC tutorial",
-                "url": "https://irc.chalmers.it",
-                "description": "This is where I'd put my IRC... If I had one. =(",
-                "github_url": "",
-                "icon": "comment"
-            },
-            {
                 "title": "wikITpedia",
                 "url": "https://wiki.chalmers.it",
                 "description": "A wiki where IT students can share knowledge with each other.",
