@@ -37,9 +37,6 @@ const Header = ({
         </a>
       ))}
     </div>
-    <div className={styles.darkModeSwitchInHeaderStyle}>
-      <DarkModeSwitch darkMode={darkMode} setDarkMode={setDarkMode} />
-    </div>
     <img
       className={styles.showNav}
       src="images/Hamburger_icon.png"
