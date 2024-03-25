@@ -6,9 +6,7 @@ export interface DarkModeProps {
 }
 const DarkModeSwitch = ({ darkMode, setDarkMode }: DarkModeProps) => (
   <div
-    className={`${styles.darkModeHolder} ${
-      darkMode ? null : styles.blackColor
-    }`}
+    className={`${styles.darkModeHolder}`}
     onClick={() => {
       setDarkMode(!darkMode);
     }}>

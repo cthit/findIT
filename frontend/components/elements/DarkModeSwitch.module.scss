@@ -40,13 +40,9 @@
 .darkModeHolder {
 	height: 1.2$space-big;
 	width: 2.2*$space-big;
-	background-color: black;
+	background-color: var(--site-background);
 	border: (0.1*$space-big) solid white;
 	border-radius: 1.1*$space-big/2;
-}
-
-.blackColor {
-	background-color: white;
 }
 
 @keyframes in {

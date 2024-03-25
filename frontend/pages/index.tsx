@@ -9,41 +9,26 @@ import { Category } from "../data/category";
 import data from "../data/service.json";
 
 const switchMode = (darkMode: boolean) => {
-  const docStyle = document.documentElement.style;
-  if (darkMode) {
-    docStyle.setProperty("--highlight1", "#de3c4b");
-    docStyle.setProperty("--highlight2", "#2191fb");
-    docStyle.setProperty("--highlight1-hover", "#ff8c89");
-    docStyle.setProperty("--highlight2-hover", "#0171db");
-    docStyle.setProperty("--background", "#2b303a");
-    docStyle.setProperty("--site-background", "#111317");
-    docStyle.setProperty("--text", "#ffffff");
-  } else {
-    docStyle.setProperty("--highlight1", "#07a0c3");
-    docStyle.setProperty("--highlight2", "#f0cff2");
-    docStyle.setProperty("--highlight1-hover", "#ff8c89");
-    docStyle.setProperty("--highlight2-hover", "#81e1eb");
-    docStyle.setProperty("--background", "#034078");
-    docStyle.setProperty("--site-background", "#ededf0");
-    docStyle.setProperty("--text", "#ffffff");
-  }
+  const doc = document.documentElement;
+  if(darkMode) doc.classList.remove("Alternate-Theme");
+  else doc.classList.add("Alternate-Theme");
 };
 
 const checkClientMode = () => {
   if (typeof window !== "undefined") {
-    if (window.matchMedia?.("(prefers-color-scheme: dark)").matches)
-      return true;
+    if (window.matchMedia?.("(prefers-color-scheme: light)").matches)
+      return false;
   }
-  return false;
+  return true;
 };
 
 const Home: NextPage = () => {
   const categories: Category[] = data;
   const [show, setShow] = useState(false);
-  const [darkMode, setDarkMode] = useState(checkClientMode());
+  const [darkMode, setDarkMode] = useState(checkClientMode()); 
   useEffect(() => {
     switchMode(darkMode);
-  });
+  }); 
   return (
     <>
       <Head>

@@ -1,5 +1,5 @@
 @import "vars";
-@import "darkMode_colors";
+@import "Theme_colors";
 
 @media print {
   /* All your print styles go here */
@@ -264,6 +264,8 @@ button {
   }
         margin-bottom:$space-small;
 }
+
+/* dark mode och lightmode är samma bör göras till en klass */
 .darkMode {
   background-color: var(--site-background);
     color: var(--text);
