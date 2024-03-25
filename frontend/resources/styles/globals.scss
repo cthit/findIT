@@ -266,12 +266,7 @@ button {
 }
 
 /* dark mode och lightmode är samma bör göras till en klass */
-.darkMode {
-  background-color: var(--site-background);
-    color: var(--text);
-}
-
-.lightMode {
+.backgroundcolor {
   background-color: var(--site-background);
     color: var(--text);
 }
