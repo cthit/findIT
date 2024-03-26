@@ -1,7 +1,7 @@
 :root { /* dark theme */
-	--highlight1: #de3c4b;
+	--highlight1: #44aedb;
 	--highlight2: #2191fb;
-	--highlight1-hover: #ff8c89;
+	--highlight1-hover: #22d9e5;
 	--highlight2-hover: #0171db;
 	--background: #2b303a;
 	--site-background: #111317;
@@ -11,22 +11,22 @@
 @media (prefers-color-scheme: "light") {
 	
 	:root { /* light theme */
-		--highlight1: #07a0c3;
-		--highlight2: #f0cff2;
-		--highlight1-hover: #ff8c89;
+		--highlight1: #034078;
+		--highlight2: #034078;
+		--highlight1-hover: #22d9e5;
 		--highlight2-hover: #81e1eb;
-		--background: #034078;
+		--background: #44aedb;
 		--site-background: #ededf0;
 		--text: #ffffff;
 	}
 }
 
 .Alternate-Theme2 { /* light theme OLD */
-	--highlight1: #034078;
-	--highlight2: #2f36a6;
-	--highlight1-hover: #22d9e5;
+	--highlight1: #07a0c3;
+	--highlight2: #f0cff2;
+	--highlight1-hover: #ff8c89;
 	--highlight2-hover: #81e1eb;
-	--background: #07a0c3;
+	--background: #034078;
 	--site-background: #ededf0;
 	--text: #ffffff;
 }
