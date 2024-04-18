@@ -105,13 +105,6 @@
             "icon": "ship"
           },
           {
-            "title": "BussIT",
-            "url": "https://bussit.chalmers.it",
-            "description": "A quick way to know when the buses and trams leave Chalmers.",
-            "github_url": "https://github.com/cthit/BussIT",
-            "icon": "bus"
-          },
-          {
             "title": "hexIT",
             "url": "https://hex.chalmers.it",
             "description": "The (un)official color palette for IT",
