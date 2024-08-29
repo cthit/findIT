@@ -155,7 +155,7 @@ p {
 }
 
 a {
-  color: var(--highlight1);
+  color: var(--navtext);
   text-decoration: none;
   font-weight: 600;
   font-size:$font-size-normal;
@@ -173,7 +173,7 @@ button {
   font-size:$font-size-normal;
   transition: all .3s ease;
   border: 3px solid var(--highlight1);
-  border-radius: 3px;
+  border-radius: 10px;
   box-shadow: 4px 2px $shadow;
   position: relative;
   &:hover{

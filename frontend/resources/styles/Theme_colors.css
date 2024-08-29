@@ -6,6 +6,7 @@
 	--background: #2b303a;
 	--site-background: #111317;
 	--text: #ffffff;
+	--navtext: var(--highlight1);
 }
 
 @media (prefers-color-scheme: "light") {
@@ -18,6 +19,7 @@
 		--background: #44aedb;
 		--site-background: #ededf0;
 		--text: #ffffff;
+		--navtext: var(--text);
 	}
 }
 
