@@ -23,11 +23,7 @@ const Home: NextPage = () => {
       </Head>
 
       <div className="backgroundcolor">
-        <Header
-          categories={categories}
-          show={show}
-          setShow={setShow}
-        />
+        <Header categories={categories} show={show} setShow={setShow} />
         <main>
           {categories.map((service: Category) => (
             <CategoryList categories={service} key={service.category} />
