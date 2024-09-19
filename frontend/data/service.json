@@ -117,6 +117,20 @@
             "description": "Create templates for printing pins",
             "github_url": "https://github.com/cthit/pins",
             "icon": "bulb"
+          },
+          {
+            "title": "Vikunja",
+            "url": "https://vikunja.chalmers.it",
+            "description": "A self-hosted service for setting up kanban-boards",
+            "github_url": "",
+            "icon": "kanban"
+          },
+          {
+            "title": "Rallly",
+            "url": "https://rallly.chalmers.it",
+            "description": "Meeting scheduling tool",
+            "github_url": "",
+            "icon": "calendar"
           }
 
         ]
