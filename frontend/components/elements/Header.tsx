@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { Category } from "../../data/category";
 import NavBar from "../views/NavBar";
 
@@ -8,17 +10,9 @@ export interface HeaderProps {
   show: boolean;
   setShow: any;
 }
-const Header = ({
-  categories,
-  show,
-  setShow,
-}: HeaderProps) => (
+const Header = ({ categories, show, setShow }: HeaderProps) => (
   <nav className={`${styles.headerStyle}`}>
-    <NavBar
-      categories={categories}
-      show={show}
-      setShow={setShow}
-    />
+    <NavBar categories={categories} show={show} setShow={setShow} />
     <h1 className={`${styles.titleStyle}`}>findIT</h1>
     <div className={styles.catList}>
       {categories.map((category) => (
@@ -30,7 +24,8 @@ const Header = ({
         </a>
       ))}
     </div>
-    <img
+    <Image
+      alt="show navigation"
       className={styles.showNav}
       src="images/Hamburger_icon.png"
       onClick={() => {

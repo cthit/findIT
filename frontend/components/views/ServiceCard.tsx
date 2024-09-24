@@ -20,7 +20,7 @@ function ServiceCard({ service }: ServiceCardProps) {
   return (
     <div className={`${styles.cardClass} card`}>
       <p>
-        <img
+        <Image
           src={src}
           className={`${styles.iconClass} marginTop marginLeft marginRight`}
           alt={`${service.title}'s icon`}

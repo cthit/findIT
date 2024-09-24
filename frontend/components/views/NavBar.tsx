@@ -7,11 +7,7 @@ export interface NavBarProps {
   show: boolean;
   setShow: any;
 }
-function NavBar({
-  categories,
-  show,
-  setShow,
-}: NavBarProps) {
+function NavBar({ categories, show, setShow }: NavBarProps) {
   return (
     <div
       className={`${styles.navStyle} ${show ? styles.shown : styles.hidden}`}>
