@@ -1,5 +1,5 @@
 @import "vars";
-@import "darkMode_colors";
+@import "Theme_colors";
 
 @media print {
   /* All your print styles go here */
@@ -21,6 +21,9 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--site-background);
+  color: var(--text);
+  padding-bottom: 10vh;
   //background-color: #f0f0f0;
 }
 
@@ -155,7 +158,7 @@ p {
 }
 
 a {
-  color: var(--highlight2);
+  color: var(--navtext);
   text-decoration: none;
   font-weight: 600;
   font-size:$font-size-normal;
@@ -173,7 +176,7 @@ button {
   font-size:$font-size-normal;
   transition: all .3s ease;
   border: 3px solid var(--highlight1);
-  border-radius: 3px;
+  border-radius: 10px;
   box-shadow: 4px 2px $shadow;
   position: relative;
   &:hover{
@@ -264,12 +267,8 @@ button {
   }
         margin-bottom:$space-small;
 }
-.darkMode {
-  background-color: var(--site-background);
-    color: var(--text);
-}
 
-.lightMode {
-  background-color: var(--site-background);
-    color: var(--text);
+/* dark mode och lightmode är samma bör göras till en klass */
+.backgroundcolor {
+  
 }

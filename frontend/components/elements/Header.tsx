@@ -1,31 +1,18 @@
+import Image from "next/image";
+
 import { Category } from "../../data/category";
 import NavBar from "../views/NavBar";
 
-import DarkModeSwitch from "./DarkModeSwitch";
 import styles from "./Header.module.scss";
 
 export interface HeaderProps {
   categories: Category[];
   show: boolean;
   setShow: any;
-  darkMode: boolean;
-  setDarkMode: any;
 }
-const Header = ({
-  categories,
-  show,
-  setShow,
-  darkMode,
-  setDarkMode
-}: HeaderProps) => (
+const Header = ({ categories, show, setShow }: HeaderProps) => (
   <nav className={`${styles.headerStyle}`}>
-    <NavBar
-      categories={categories}
-      show={show}
-      setShow={setShow}
-      darkMode={darkMode}
-      setDarkMode={setDarkMode}
-    />
+    <NavBar categories={categories} show={show} setShow={setShow} />
     <h1 className={`${styles.titleStyle}`}>findIT</h1>
     <div className={styles.catList}>
       {categories.map((category) => (
@@ -37,10 +24,8 @@ const Header = ({
         </a>
       ))}
     </div>
-    <div className={styles.darkModeSwitchInHeaderStyle}>
-      <DarkModeSwitch darkMode={darkMode} setDarkMode={setDarkMode} />
-    </div>
     <img
+      alt="show navigation"
       className={styles.showNav}
       src="images/Hamburger_icon.png"
       onClick={() => {
