@@ -7,8 +7,8 @@
 	:hover{
 		cursor:pointer;
 	}
-}
 
+}
 .aClass{
 	position:absolute;
 	color: var(--text);
@@ -36,6 +36,10 @@
 	font-size: $font-size-large;
 	color: var(--text);
 }
+/*.darkCard {
+	background-color: var(--background);
+		color: var(--text);
+}*/
 .cardClass {
 	background-color: var(--background);
 	color: var(--text);

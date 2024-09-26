@@ -3,9 +3,9 @@ FROM node:lts-alpine
 COPY . /app
 
 workdir /app
-run npm install
+run yarn install
 
 
-run npm run build
+run yarn build
 expose 3000
-cmd ["npm", "run", "start"]
+cmd ["yarn", "start"]
