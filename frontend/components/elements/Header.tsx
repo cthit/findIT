@@ -24,7 +24,7 @@ const Header = ({ categories, show, setShow }: HeaderProps) => (
         </a>
       ))}
     </div>
-    <Image
+    <img
       alt="show navigation"
       className={styles.showNav}
       src="images/Hamburger_icon.png"
