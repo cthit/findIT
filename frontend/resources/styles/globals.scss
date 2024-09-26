@@ -21,6 +21,9 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--site-background);
+  color: var(--text);
+  padding-bottom: 10vh;
   //background-color: #f0f0f0;
 }
 
@@ -267,6 +270,5 @@ button {
 
 /* dark mode och lightmode är samma bör göras till en klass */
 .backgroundcolor {
-  background-color: var(--site-background);
-    color: var(--text);
+  
 }

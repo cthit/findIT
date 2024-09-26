@@ -22,14 +22,12 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="backgroundcolor">
-        <Header categories={categories} show={show} setShow={setShow} />
-        <main>
-          {categories.map((service: Category) => (
-            <CategoryList categories={service} key={service.category} />
-          ))}
-        </main>
-      </div>
+      <Header categories={categories} show={show} setShow={setShow} />
+      <main>
+        {categories.map((service: Category) => (
+          <CategoryList categories={service} key={service.category} />
+        ))}
+      </main>
     </>
   );
 };
