@@ -31,20 +31,24 @@ function ServiceCard({ service }: ServiceCardProps) {
       </p>
       <p className="marginTop">{service.description}</p>
       {service.github_url ? (
-        <a className={styles.aClass} href={service.github_url}>
+        <a className={styles.aGClass} href={service.github_url}>
           GITHUB
         </a>
       ) : null}
 
-      <button
-        className={styles.buttonClass}
-        onClick={() => {
-          window.open(service.url);
-        }}>
+      <a className={styles.aSClass} href={service.url}>
         OPEN SERVICE
-      </button>
+      </a>
     </div>
   );
 }
 
 export default ServiceCard;
+
+/*<button
+        className={styles.buttonClass}
+        onClick={() => {
+          window.open(service.url);
+        }}>
+        OPEN SERVICE
+      </button>*/
