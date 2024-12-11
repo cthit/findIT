@@ -44,11 +44,3 @@ function ServiceCard({ service }: ServiceCardProps) {
 }
 
 export default ServiceCard;
-
-/*<button
-        className={styles.buttonClass}
-        onClick={() => {
-          window.open(service.url);
-        }}>
-        OPEN SERVICE
-      </button>*/
