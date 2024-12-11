@@ -1,42 +1,81 @@
 @import "../../resources/styles/vars.scss";
 
-.buttonClass{
-	position:absolute;
-		bottom: 25px;
-			right: 25px;
-	:hover{
-		cursor:pointer;
-	}
+.buttonClass {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  :hover {
+    cursor: pointer;
+  }
 }
 
-.aClass{
-	position:absolute;
-	color: var(--text);
-	@media only screen and (min-width:$breakpoint-mobile){
-		bottom: 35px;
-			left: 35px;
-		}
+.aGClass {
+  position: absolute;
+  color: var(--text);
+  @media only screen and (min-width: $breakpoint-mobile) {
+    bottom: 35px;
+    left: 35px;
+  }
 
-	@media only screen and (max-width:$breakpoint-mobile){
-		bottom:$space-big;
-		left:$space-big;
-	}
+  @media only screen and (max-width: $breakpoint-mobile) {
+    bottom: $space-big;
+    left: $space-big;
+  }
 }
 
-.iconClass{
-	height: $space-big;
-		width: $space-big;
-		filter: invert(90%);
+.aSClass {
+  position: absolute;
+  color: var(--text);
+  background-color: var(--highlight1);
+  text-decoration: none;
+  padding: 5pt;
+  font-size: $font-size-normal;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 3px solid var(--highlight1);
+  border-radius: 10px;
+  box-shadow: 4px 2px $shadow;
+  &:hover {
+    background-color: var(--highlight1-hover);
+    border-color: var(--highlight1-hover);
+    box-shadow: 8px 4px $shadow;
+    margin: 0 2px 4px 0;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  &:active {
+    transition: none;
+    background-color: var(--highlight1);
+    border-color: var(--highlight1);
+    color: var(--text);
+    margin: 0 1px 2px 0;
+  }
+
+  @media only screen and (min-width: $breakpoint-mobile) {
+    bottom: 25px;
+    right: 25px;
+  }
+
+  @media only screen and (max-width: $breakpoint-mobile) {
+    bottom: $space-big;
+    left: $space-big;
+  }
 }
 
-.cardTitle{
-	font-weight: bold;
-		position: relative;
-		top: -1/4*$space-big;
-	font-size: $font-size-large;
-	color: var(--text);
+.iconClass {
+  height: $space-big;
+  width: $space-big;
+  filter: invert(90%);
+}
+
+.cardTitle {
+  font-weight: bold;
+  position: relative;
+  top: -1/4 * $space-big;
+  font-size: $font-size-large;
+  color: var(--text);
 }
 .cardClass {
-	background-color: var(--background);
-	color: var(--text);
+  background-color: var(--background);
+  color: var(--text);
 }
